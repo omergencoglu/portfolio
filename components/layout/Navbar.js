@@ -1,5 +1,9 @@
 import Link from "next/link";
 
+import ToggleSwitch from "../ui/ToggleSwitch";
+import SunIcon from "../ui/SunIcon";
+import MoonIcon from "../ui/MoonIcon";
+
 import classes from "./Navbar.module.css";
 
 function Navbar() {
@@ -13,6 +17,11 @@ function Navbar() {
           </li>
           <li>
             <Link href="#contact">Contact</Link>
+          </li>
+          <li>
+            <SunIcon />
+            <ToggleSwitch />
+            <MoonIcon />
           </li>
         </ul>
       </nav>
