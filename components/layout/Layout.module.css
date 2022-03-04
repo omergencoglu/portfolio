@@ -1,18 +1,27 @@
-.name_area {
-  grid-area: name;
-}
-
 .tools_side {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   grid-area: toolkit;
 }
 
 .social_side {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  position: relative;
   grid-area: social;
+  flex-direction: row;
 }
 
 .main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   grid-area: main;
-  margin: 3rem auto;
+  margin: 2rem auto;
   width: 90%;
   max-width: 40rem;
 }
@@ -31,12 +40,17 @@
 
 @media (min-width: 700px) {
   .wrapper {
-    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-columns: 1fr 9fr 2fr;
     grid-template-areas:
       "header header header"
-      "social name   name"
-      "social main   toolkit"
-      "social main   toolkit"
+      "name name   name"
+      "... main   toolkit"
+      "... main   toolkit"
       "footer footer footer";
+  }
+  .social_side {
+    position: absolute;
+    bottom: 0;
+    flex-direction: column;
   }
 }

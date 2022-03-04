@@ -2,12 +2,12 @@ import Link from "next/link";
 
 import ToggleSwitch from "../ui/ToggleSwitch";
 
-import classes from "./Navbar.module.css";
+import styles from "./Navbar.module.css";
 
 function Navbar() {
   return (
-    <header className={classes.header}>
-      <div className={classes.logo}>Omer Gencoglu</div>
+    <header className={styles.header}>
+      <div className={styles.logo}>Omer Gencoglu</div>
       <nav>
         <ul>
           <li>

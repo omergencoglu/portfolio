@@ -1,16 +1,19 @@
 import Navbar from "./Navbar";
+import NameArea from "../Content/NameArea";
 import Footer from "./Footer";
+import Toolkit from "../Content/Toolkit";
+import Social from "../Content/Social";
 
-import classes from "./Layout.module.css";
+import styles from "./Layout.module.css";
 
 function Layout({ children }) {
   return (
-    <div className={classes.wrapper}>
+    <div className={styles.wrapper}>
       <Navbar />
-      <div className={classes.name_area}>Name area</div>
-      <div className={classes.tools_side}>Toolkit</div>
-      <main className={classes.main}>{children}</main>
-      <div className={classes.social_side}>Social</div>
+      <NameArea />
+      <Toolkit />
+      <main className={styles.main}>{children}</main>
+      <Social />
       <Footer />
     </div>
   );

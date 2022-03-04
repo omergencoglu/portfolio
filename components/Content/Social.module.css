@@ -1,0 +1,17 @@
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  position: relative;
+  grid-area: social;
+  flex-direction: row;
+}
+
+@media (min-width: 700px) {
+  .social {
+    position: absolute;
+    bottom: 0;
+    flex-direction: column;
+  }
+}

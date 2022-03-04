@@ -2,14 +2,14 @@ import { Fragment } from "react/cjs/react.development";
 import MoonIcon from "./MoonIcon";
 import SunIcon from "./SunIcon";
 
-import classes from "./ToggleSwitch.module.css";
+import styles from "./ToggleSwitch.module.css";
 
 function ToggleSwitch() {
   return (
     <Fragment>
-      <label className={classes.switch}>
+      <label className={styles.switch}>
         <input type="checkbox" />
-        <span className={classes.slider + " " + classes.round}>
+        <span className={styles.slider + " " + styles.round}>
           <MoonIcon />
           <SunIcon />
         </span>

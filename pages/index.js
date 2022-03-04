@@ -1,6 +1,9 @@
 import Head from "next/head";
 import { Fragment } from "react";
 
+import Contact from "../components/Content/Contact";
+import Projects from "../components/Content/Projects";
+
 function Home() {
   return (
     <Fragment>
@@ -12,8 +15,8 @@ function Home() {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div>Projects</div>
-      <div>Contact</div>
+      <Projects />
+      <Contact />
     </Fragment>
   );
 }
