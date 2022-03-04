@@ -12,7 +12,8 @@ function Home() {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div>Hello World</div>
+      <div>Projects</div>
+      <div>Contact</div>
     </Fragment>
   );
 }
