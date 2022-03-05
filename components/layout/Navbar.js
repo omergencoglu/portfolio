@@ -7,7 +7,7 @@ import styles from "./Navbar.module.css";
 function Navbar() {
   return (
     <header className={styles.header}>
-      <div className={styles.logo}>Omer Gencoglu</div>
+      <div className={styles.logo}>OMER</div>
       <nav>
         <ul>
           <li>
