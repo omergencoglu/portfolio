@@ -2,5 +2,40 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  padding: 10%;
   grid-area: name;
+}
+
+.image {
+  border-radius: 100%;
+}
+
+.image_div {
+  width: 70%;
+  height: 100%;
+}
+
+.paragraph {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+@media (min-width: 700px) {
+  .name_area {
+    height: auto;
+    width: auto;
+  }
+  .image_div {
+    width: 30%;
+    height: 100%;
+  }
+
+  .paragraph {
+    margin: 0 0 0 5%;
+    text-align: left;
+  }
+  .name_area {
+    flex-direction: row;
+  }
 }

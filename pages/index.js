@@ -5,8 +5,6 @@ import Contact from "../components/Content/Contact";
 import Projects from "../components/Content/Projects";
 
 function Home(props) {
-  console.log(props.projects);
-
   return (
     <Fragment>
       <Head>
@@ -41,11 +39,13 @@ export async function getStaticProps() {
     props: {
       projects: data.map((data) => ({
         title: data.name,
-        link: data.html_url,
+        description: data.description,
+        githubLink: data.html_url,
+        homepage: data.homepage,
         id: data.id.toString(),
       })),
     },
-    revalidate: 1,
+    revalidate: 60,
   };
 }
 

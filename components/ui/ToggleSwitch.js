@@ -9,7 +9,7 @@ function ToggleSwitch() {
     <Fragment>
       <label className={styles.switch}>
         <input type="checkbox" />
-        <span className={styles.slider + " " + styles.round}>
+        <span className={`${styles.slider} ${styles.round}`}>
           <MoonIcon />
           <SunIcon />
         </span>
