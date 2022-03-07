@@ -2,13 +2,12 @@ import { useState, Fragment } from "react";
 
 import styles from "./MenuIcon.module.css";
 
-function MenuIcon() {
+function MenuIcon(props) {
   const [iconChange, setIconChange] = useState(false);
 
   const menuIconHandler = () => {
-    console.log(iconChange);
     setIconChange(iconChange ? false : true);
-    console.log(`${iconChange ? styles.change : ""} ${styles.bar1}`);
+    props.onClick();
   };
 
   return (
