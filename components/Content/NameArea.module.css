@@ -16,9 +16,22 @@
   height: 100%;
 }
 
-.paragraph {
+.text {
   margin-top: 4rem;
   text-align: center;
+  line-height: 3rem;
+}
+
+.my_name {
+  color: var(--blue);
+  line-height: 1rem;
+  font-size: larger;
+}
+
+.name {
+}
+
+.paragraph {
 }
 
 @media (min-width: 700px) {
@@ -31,7 +44,7 @@
     height: 100%;
   }
 
-  .paragraph {
+  .text {
     margin: 0 0 0 5%;
     text-align: left;
   }

@@ -1,7 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Source+Code+Pro&display=swap");
+
 html,
 body {
   height: 100%;
   width: 100%;
+  font-family: Source Code Pro, monospace;
 }
 
 * {
@@ -13,4 +16,8 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+:root {
+  --blue: #2e86de;
 }
