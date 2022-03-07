@@ -1,10 +1,13 @@
 import Link from "next/link";
 
-import ToggleSwitch from "../ui/ToggleSwitch";
+import MenuIcon from "../UI/MenuIcon";
+import ToggleSwitch from "../UI/ToggleSwitch";
 
 import styles from "./Navbar.module.css";
 
 function Navbar() {
+  const responsiveNavbarHandler = () => {};
+
   return (
     <header className={styles.header}>
       <div className={styles.logo}>OMER</div>
@@ -18,6 +21,9 @@ function Navbar() {
           </li>
           <li>
             <ToggleSwitch />
+          </li>
+          <li>
+            <MenuIcon />
           </li>
         </ul>
       </nav>

@@ -17,7 +17,7 @@ function NameArea() {
       </div>
       <div className={styles.text}>
         <p className={styles.my_name}>Hi, my name is</p>
-        <p className={styles.name}>Omer Gencoglu</p>
+        <p className={styles.name}>OMER GENCOGLU.</p>
         <p className={styles.paragraph}>
           I am a front-end web developer in Canada.
         </p>
