@@ -3,8 +3,9 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 10%;
+  padding: 5vw;
   grid-area: name;
+  position: relative;
 }
 
 .image {
@@ -19,28 +20,34 @@
 .text {
   margin-top: 4rem;
   text-align: center;
-  line-height: 3rem;
+}
+
+.text p {
+  margin-bottom: 2vw;
 }
 
 .my_name {
   color: var(--blue);
-  line-height: 1rem;
-  font-size: larger;
+  font-size: 3.5vw;
 }
 
 .name {
+  font-size: 6vw;
+  font-weight: bold;
 }
 
 .paragraph {
+  font-size: 3.5vw;
 }
 
 @media (min-width: 700px) {
   .name_area {
-    height: auto;
-    width: auto;
+    flex-direction: row;
+    padding-left: 8vw;
   }
+
   .image_div {
-    width: 30%;
+    width: 50%;
     height: 100%;
   }
 
@@ -48,7 +55,8 @@
     margin: 0 0 0 5%;
     text-align: left;
   }
-  .name_area {
-    flex-direction: row;
+
+  .text p {
+    margin-bottom: 1vw;
   }
 }

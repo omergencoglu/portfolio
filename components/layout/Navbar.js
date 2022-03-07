@@ -16,8 +16,8 @@ function Navbar() {
   };
 
   return (
-    <header className={styles.header}>
-      <nav className={styles.navbar}>
+    <header className={`${styles.header} ${itemsVisible && styles.menu_open}`}>
+      <nav className={`${styles.navbar} ${itemsVisible && styles.menu_open}`}>
         <div className={styles.logo}>OMER</div>
         <ul>
           <li className={styles.hide_items}>
@@ -34,7 +34,7 @@ function Navbar() {
           </li>
         </ul>
       </nav>
-      {itemsVisible && <MenuItems />}
+      <MenuItems onItemsVisible={itemsVisible} />
     </header>
   );
 }
