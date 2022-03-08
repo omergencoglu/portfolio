@@ -2,7 +2,7 @@ import Link from "next/link";
 import { CSSTransition } from "react-transition-group";
 
 import styles from "./MenuItems.module.css";
-import slideTransition from "../UI/transitions/slide.module.css";
+import slideTransition from "../UI/Transitions/slide.module.css";
 
 function MenuItems(props) {
   return (

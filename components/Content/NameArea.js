@@ -4,7 +4,7 @@ import styles from "./NameArea.module.css";
 
 function NameArea() {
   return (
-    <div className={styles.name_area}>
+    <section className={styles.name_area}>
       <div className={styles.image_div}>
         <Image
           src="/logo.png"
@@ -22,7 +22,7 @@ function NameArea() {
           I am a front-end web developer in Canada.
         </p>
       </div>
-    </div>
+    </section>
   );
 }
 

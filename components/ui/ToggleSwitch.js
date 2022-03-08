@@ -1,6 +1,6 @@
 import { Fragment } from "react/cjs/react.development";
-import MoonIcon from "./MoonIcon";
-import SunIcon from "./SunIcon";
+import MoonIcon from "./Icons/MoonIcon";
+import SunIcon from "./Icons/SunIcon";
 
 import styles from "./ToggleSwitch.module.css";
 

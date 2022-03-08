@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { useState } from "react";
 
-import MenuIcon from "../UI/MenuIcon";
+import MenuIcon from "../UI/Icons/MenuIcon";
 import ToggleSwitch from "../UI/ToggleSwitch";
 import MenuItems from "./MenuItems";
 
@@ -18,7 +18,7 @@ function Navbar() {
   return (
     <header className={`${styles.header} ${itemsVisible && styles.menu_open}`}>
       <nav className={`${styles.navbar} ${itemsVisible && styles.menu_open}`}>
-        <div className={styles.logo}>OMER</div>
+        <h1 className={styles.logo}>OMER</h1>
         <ul>
           <li className={styles.hide_items}>
             <Link href="#projects">Projects</Link>
