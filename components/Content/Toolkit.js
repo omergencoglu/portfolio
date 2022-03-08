@@ -14,7 +14,7 @@ import styles from "./Toolkit.module.css";
 function Toolkit() {
   return (
     <section className={styles.toolkit}>
-      <h2 className={styles.title}>Toolkit</h2>
+      <h2 className={styles.title}>TOOLKIT</h2>
       <div className={styles.icons_wrapper}>
         <Html5 />
         <Css3 />
