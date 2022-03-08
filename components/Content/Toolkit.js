@@ -14,18 +14,18 @@ import styles from "./Toolkit.module.css";
 function Toolkit() {
   return (
     <section className={styles.toolkit}>
-      <h2>Toolkit</h2>
+      <h2 className={styles.title}>Toolkit</h2>
       <div className={styles.icons_wrapper}>
-        <Html5 className={styles.icon} />
-        <Css3 className={styles.icon} />
-        <JavaScript className={styles.icon} />
-        <Reactjs className={styles.icon} />
-        <Nextjs className={styles.icon} />
-        <Node className={styles.icon} />
-        <Expressjs className={styles.icon} />
-        <MongoDB className={styles.icon} />
-        <Git className={styles.icon} />
-        <VSCode className={styles.icon} />
+        <Html5 />
+        <Css3 />
+        <JavaScript />
+        <Reactjs />
+        <Nextjs />
+        <Node />
+        <Expressjs />
+        <MongoDB />
+        <Git />
+        <VSCode />
       </div>
     </section>
   );

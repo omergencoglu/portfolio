@@ -1,9 +1,10 @@
-import React from "react";
+import styles from "./VSCode.module.css";
 
 function VScode(props) {
+  const classes = `${styles.figure} ${props.className}`;
   return (
-    <figure className={props.className}>
-      <svg viewBox="0 0 128 128">
+    <figure className={classes}>
+      <svg viewBox="0 0 128 128" className={styles.icon}>
         <path
           d="M3.656 45.043s-3.027-2.191.61-5.113l8.468-7.594s2.426-2.559 4.989-.328l78.175 59.328v28.45s-.039 4.468-5.757 3.976zm0 0"
           fill="#2489ca"

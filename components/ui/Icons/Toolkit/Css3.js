@@ -1,7 +1,10 @@
+import styles from "./Css3.module.css";
+
 function Css3(props) {
+  const classes = `${styles.card} ${props.className}`;
   return (
-    <figure className={props.className}>
-      <svg viewBox="0 0 128 128">
+    <figure className={classes}>
+      <svg viewBox="0 0 128 128" className={styles.icon}>
         <path
           fill="#1572B6"
           d="M18.814 114.123L8.76 1.352h110.48l-10.064 112.754-45.243 12.543-45.119-12.526z"

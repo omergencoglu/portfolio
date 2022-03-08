@@ -1,9 +1,10 @@
-import React from "react";
+import styles from "./MongoDB.module.css";
 
 function MongoDB(props) {
+  const classes = `${styles.card} ${props.className}`;
   return (
-    <figure className={props.className}>
-      <svg viewBox="0 0 128 128">
+    <figure className={classes}>
+      <svg viewBox="0 0 128 128" className={styles.icon}>
         <path
           fillRule="evenodd"
           clipRule="evenodd"
