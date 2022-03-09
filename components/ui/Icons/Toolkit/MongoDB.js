@@ -5,6 +5,7 @@ function MongoDB(props) {
   return (
     <figure className={classes}>
       <svg viewBox="0 0 128 128" className={styles.icon}>
+        <title>MongoDB</title>
         <path
           fillRule="evenodd"
           clipRule="evenodd"

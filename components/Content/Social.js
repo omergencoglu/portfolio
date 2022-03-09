@@ -1,12 +1,18 @@
+import Github from "../UI/Icons/Social/Github";
+import Linkedin from "../UI/Icons/Social/Linkedin";
+import Twitter from "../UI/Icons/Social/Twitter";
+
 import styles from "./Social.module.css";
 
 function Social() {
   return (
-    <div className={styles.social}>
-      <div>Github</div>
-      <div>Linkedin</div>
-      <div>Twitter</div>
-    </div>
+    <section className={styles.social}>
+      <div className={styles.icons_wrapper}>
+        <Github />
+        <Linkedin />
+        <Twitter />
+      </div>
+    </section>
   );
 }
 
