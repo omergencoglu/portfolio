@@ -6,6 +6,7 @@
   padding: 5vw;
   grid-area: name;
   position: relative;
+  margin-top: 5rem;
 }
 
 .image {

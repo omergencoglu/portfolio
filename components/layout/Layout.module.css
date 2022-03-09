@@ -11,7 +11,6 @@
 
 .wrapper {
   display: grid;
-  gap: 5rem;
   grid-template-areas:
     "header"
     "name"

@@ -4,6 +4,7 @@
   justify-content: center;
   flex-direction: column;
   grid-area: toolkit;
+  margin-top: 5rem;
 }
 
 .icons_wrapper {
