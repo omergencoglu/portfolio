@@ -1,22 +1,19 @@
-import Head from "next/head";
 import { Fragment } from "react";
 
+import NameArea from "../components/Content/NameArea";
+import Toolkit from "../components/Content/Toolkit";
+import Social from "../components/Content/Social";
 import Contact from "../components/Content/Contact";
 import Projects from "../components/Content/Projects";
 
 function Home(props) {
   return (
     <Fragment>
-      <Head>
-        <title>Omer Gencoglu Portfolio</title>
-        <meta
-          name="description"
-          content="You can find more information about me, my projects and more..."
-        />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <NameArea />
+      <Toolkit />
       <Projects />
       <Contact />
+      <Social />
     </Fragment>
   );
 }

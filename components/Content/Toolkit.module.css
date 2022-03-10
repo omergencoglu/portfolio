@@ -31,13 +31,14 @@
 
   .title {
     transform: rotate(90deg);
-    margin: 0 -3rem 0 -4rem;
+    margin: 0 -4rem 0 -5rem;
     font-size: 1.5rem;
+    font-weight: 200;
   }
 
   .icons_wrapper > * {
     flex-direction: column;
-    margin: 2rem;
+    margin: 2rem 0 2rem 0;
     flex-wrap: nowrap;
   }
 }

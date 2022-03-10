@@ -4,6 +4,7 @@
   justify-content: center;
   flex-direction: column;
   margin-top: 5rem;
+  grid-area: projects;
 }
 
 .cards_wrapper {
@@ -11,10 +12,12 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding: 1vw;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 650px) {
   .cards_wrapper {
     flex-direction: row;
+    flex-wrap: wrap;
   }
 }

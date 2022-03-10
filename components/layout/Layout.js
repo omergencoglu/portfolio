@@ -1,21 +1,26 @@
+import { Fragment } from "react";
+import Head from "next/head";
+
 import Navbar from "./Navbar";
-import NameArea from "../Content/NameArea";
 import Footer from "./Footer";
-import Toolkit from "../Content/Toolkit";
-import Social from "../Content/Social";
 
 import styles from "./Layout.module.css";
 
 function Layout({ children }) {
   return (
-    <div className={styles.wrapper}>
+    <Fragment>
+      <Head>
+        <title>Omer Gencoglu Portfolio</title>
+        <meta
+          name="description"
+          content="You can find more information about me, my projects and more..."
+        />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <Navbar />
-      <NameArea />
-      <Toolkit />
       <main className={styles.main}>{children}</main>
-      <Social />
       <Footer />
-    </div>
+    </Fragment>
   );
 }
 

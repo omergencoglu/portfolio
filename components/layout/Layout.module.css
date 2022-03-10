@@ -3,31 +3,26 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  grid-area: main;
   margin: 2rem auto;
-  width: 90%;
-  max-width: 40rem;
-}
-
-.wrapper {
   display: grid;
   grid-template-areas:
     "header"
     "name"
     "toolkit"
-    "main"
+    "projects"
+    "contact"
     "social"
     "footer";
 }
 
 @media (min-width: 900px) {
-  .wrapper {
-    grid-template-columns: 1fr 9fr 2fr;
+  .main {
+    grid-template-columns: 10fr 2fr;
     grid-template-areas:
-      "header header header"
-      "name name   name"
-      "... main   toolkit"
-      "... main   toolkit"
-      "footer footer footer";
+      "header    header"
+      "name      name"
+      "projects  toolkit"
+      "contact   contact"
+      "footer    footer";
   }
 }
