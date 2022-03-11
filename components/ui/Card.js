@@ -11,11 +11,11 @@ const Card = (props) => {
     <div className={classes}>
       <div className={styles.imageContainer}>
         <Image
-          Image
           src={props.img}
           alt={props.alt}
-          layout="fill"
-          objectFit="cover"
+          width={100}
+          height={100}
+          layout="responsive"
         />
       </div>
       <p>{props.children}</p>
