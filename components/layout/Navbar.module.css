@@ -28,7 +28,7 @@
   align-items: center;
   justify-content: space-between;
   background-color: #fdfdff;
-  padding: 0 2rem;
+  padding: 0 0.8rem;
   box-shadow: rgba(46, 134, 222, 0.1) 0px 4px 12px;
   transition: box-shadow 1s ease-in-out;
   z-index: 2;
@@ -88,6 +88,7 @@
 
   .navbar {
     height: 4.5rem;
+    padding: 0 1.5rem;
   }
 
   .navbar li {
@@ -102,6 +103,7 @@
 
   .navbar {
     height: 5rem;
+    padding: 0 2rem;
   }
 
   .logo {
