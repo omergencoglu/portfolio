@@ -15,7 +15,7 @@ function Toolkit() {
   return (
     <section className={styles.toolkit}>
       <h2 className={styles.title}>TOOLKIT</h2>
-      <div className={styles.icons_wrapper}>
+      <div className={styles.iconsWrapper}>
         <Html5 />
         <Css3 />
         <JavaScript />

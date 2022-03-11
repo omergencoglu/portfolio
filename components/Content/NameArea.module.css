@@ -1,4 +1,4 @@
-.name_area {
+.nameArea {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -13,7 +13,7 @@
   border-radius: 100%;
 }
 
-.image_div {
+.imageDiv {
   width: 70%;
   height: 100%;
 }
@@ -27,7 +27,7 @@
   margin-bottom: 2vw;
 }
 
-.my_name {
+.myName {
   color: var(--blue);
   font-size: 3.5vw;
 }
@@ -42,12 +42,12 @@
 }
 
 @media (min-width: 700px) {
-  .name_area {
+  .nameArea {
     flex-direction: row;
     padding-left: 8vw;
   }
 
-  .image_div {
+  .imageDiv {
     width: 50%;
     height: 100%;
   }

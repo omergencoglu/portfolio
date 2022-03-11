@@ -7,7 +7,7 @@
   transition: height 1s ease-in-out;
 }
 
-.header.menu_open {
+.header.menuOpen {
   height: 280px;
 }
 
@@ -34,7 +34,7 @@
   z-index: 2;
 }
 
-.navbar.menu_open {
+.navbar.menuOpen {
   box-shadow: 0px 3px 16px 8px rgba(0, 0, 0, 0.3);
 }
 
@@ -65,7 +65,7 @@
   flex-direction: row;
 }
 
-.nav_links {
+.navLinks {
   display: none;
 }
 
@@ -74,11 +74,11 @@
     font-size: 1.2rem;
   }
 
-  .nav_links {
+  .navLinks {
     display: block;
   }
 
-  .hide_icon {
+  .hideIcon {
     display: none;
   }
 

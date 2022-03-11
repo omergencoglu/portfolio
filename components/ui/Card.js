@@ -9,11 +9,17 @@ const Card = (props) => {
   const classes = `${styles.card} ${props.className}`;
   return (
     <div className={classes}>
-      <div style={{ width: "100%", height: "100%", position: "relative" }}>
-        <Image src={props.img} alt={props.alt} layout="fill" />
+      <div className={styles.imageContainer}>
+        <Image
+          Image
+          src={props.img}
+          alt={props.alt}
+          layout="fill"
+          objectFit="cover"
+        />
       </div>
       <p>{props.children}</p>
-      <div className={styles.card_footer}>
+      <div className={styles.cardFooter}>
         <span>{props.keywords}</span>
         <div className={styles.links}>
           <a href={props.githubLink} target="_blank" rel="noopener noreferrer">

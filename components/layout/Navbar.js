@@ -22,20 +22,20 @@ function Navbar() {
   }
 
   return (
-    <header className={`${styles.header} ${itemsVisible && styles.menu_open}`}>
-      <nav className={`${styles.navbar} ${itemsVisible && styles.menu_open}`}>
+    <header className={`${styles.header} ${itemsVisible && styles.menuOpen}`}>
+      <nav className={`${styles.navbar} ${itemsVisible && styles.menuOpen}`}>
         <h1 className={styles.logo}>OMER</h1>
         <ul>
-          <li className={styles.nav_links}>
+          <li className={styles.navLinks}>
             <Link href="#projects">Projects</Link>
           </li>
-          <li className={styles.nav_links}>
+          <li className={styles.navLinks}>
             <Link href="#contact">Contact</Link>
           </li>
           <li>
             <ToggleSwitch />
           </li>
-          <li className={styles.hide_icon}>
+          <li className={styles.hideIcon}>
             <MenuIcon
               onClick={responsiveNavbarHandler}
               onItemsVisible={itemsVisible}

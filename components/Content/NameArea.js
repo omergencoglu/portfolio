@@ -4,8 +4,8 @@ import styles from "./NameArea.module.css";
 
 function NameArea() {
   return (
-    <section className={styles.name_area}>
-      <div className={styles.image_div}>
+    <section className={styles.nameArea}>
+      <div className={styles.imageDiv}>
         <Image
           src="/logo.png"
           alt="Omer Gencoglu"
@@ -16,7 +16,7 @@ function NameArea() {
         />
       </div>
       <div className={styles.text}>
-        <p className={styles.my_name}>Hi, my name is</p>
+        <p className={styles.myName}>Hi, my name is</p>
         <p className={styles.name}>OMER GENCOGLU.</p>
         <p className={styles.paragraph}>
           I am a front-end web developer in Canada.

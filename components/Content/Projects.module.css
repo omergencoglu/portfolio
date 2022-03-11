@@ -7,7 +7,7 @@
   grid-area: projects;
 }
 
-.cards_wrapper {
+.cardsWrapper {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -16,7 +16,7 @@
 }
 
 @media (min-width: 650px) {
-  .cards_wrapper {
+  .cardsWrapper {
     flex-direction: row;
     flex-wrap: wrap;
   }

@@ -7,7 +7,7 @@ import styles from "./Social.module.css";
 function Social() {
   return (
     <section className={styles.social}>
-      <div className={styles.icons_wrapper}>
+      <div className={styles.iconsWrapper}>
         <a
           href="https://github.com/omergencoglu"
           target="_blank"
