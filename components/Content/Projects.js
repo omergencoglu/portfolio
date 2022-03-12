@@ -7,22 +7,22 @@ function Projects() {
     <section className={styles.projects}>
       <h2 id="projects">PROJECTS</h2>
       <div className={styles.cardsWrapper}>
-        <Card img="/logo.png" keywords="React Next.js">
+        <Card img="/weather-app.png" keywords="React Next.js">
           Card1
         </Card>
-        <Card img="/placeholder.jpg" keywords="React Next.js">
+        <Card img="/weather-app.png" keywords="React Next.js">
           Card1
         </Card>
-        <Card img="/placeholder.jpg" keywords="React Next.js">
+        <Card img="/weather-app.png" keywords="React Next.js">
           Card1
         </Card>
-        <Card img="/placeholder.jpg" keywords="React Next.js">
+        <Card img="/weather-app.png" keywords="React Next.js">
           Card1
         </Card>
-        <Card img="/placeholder.jpg" keywords="React Next.js">
+        <Card img="/weather-app.png" keywords="React Next.js">
           Card1
         </Card>
-        <Card img="/placeholder.jpg" keywords="React Next.js">
+        <Card img="/weather-app.png" keywords="React Next.js">
           Card1
         </Card>
       </div>
