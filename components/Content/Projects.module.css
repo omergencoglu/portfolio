@@ -1,7 +1,6 @@
 .projects {
   display: flex;
   align-items: center;
-  justify-content: center;
   flex-direction: column;
   margin-top: 5rem;
   grid-area: projects;
@@ -18,5 +17,11 @@
   .cardsWrapper {
     flex-direction: row;
     flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 900px) {
+  .projects {
+    margin-left: 3vw;
   }
 }

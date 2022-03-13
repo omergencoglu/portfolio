@@ -29,16 +29,16 @@
 
 .myName {
   color: var(--blue);
-  font-size: 3.5vw;
+  font-size: 3vw;
 }
 
 .name {
-  font-size: 6vw;
+  font-size: 5vw;
   font-weight: bold;
 }
 
 .paragraph {
-  font-size: 3.5vw;
+  font-size: 3vw;
 }
 
 @media (min-width: 700px) {

@@ -19,33 +19,47 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 4.5rem;
-  width: 4.5rem;
+  height: 4rem;
+  width: 4rem;
+  font-size: 0.9rem;
   margin: 1.5rem;
 }
 
 @media (min-width: 900px) {
   .toolkit {
     flex-direction: row-reverse;
+    align-items: center;
+    justify-content: start;
+    width: 9rem;
   }
 
   .title {
     transform: rotate(90deg);
-    margin: 0 -4rem 0 -5rem;
+    margin: 0 0 0 -3rem;
     font-size: 1.5rem;
     font-weight: 200;
   }
 
-  .iconsWrapper > * {
-    flex-direction: column;
-    margin: 2rem 0 2rem 0;
+  .iconsWrapper {
     flex-wrap: nowrap;
+    flex-direction: column;
+    margin-left: 1vw;
+  }
+
+  .iconsWrapper > * {
+    margin: 4rem 0 4rem 0;
+    height: 4rem;
+    width: 4rem;
+    font-size: 0.9rem;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
   .iconsWrapper > * {
-    height: 5rem;
-    width: 5rem;
+    height: 4.5rem;
+    width: 4.5rem;
+  }
+  .toolkit {
+    margin-right: 1vw;
   }
 }

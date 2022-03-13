@@ -1,8 +1,4 @@
 .main {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
   margin: 2rem auto;
   display: grid;
   grid-template-areas:
@@ -17,7 +13,7 @@
 
 @media (min-width: 900px) {
   .main {
-    grid-template-columns: 10fr 2fr;
+    grid-template-columns: 11fr 1fr;
     grid-template-areas:
       "header    header"
       "name      name"

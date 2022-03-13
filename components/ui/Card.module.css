@@ -55,3 +55,10 @@
     height: 25rem;
   }
 }
+
+@media (min-width: 1280px) {
+  .card {
+    width: 25vw;
+    height: 25rem;
+  }
+}
