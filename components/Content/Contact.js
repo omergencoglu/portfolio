@@ -7,21 +7,12 @@ function Contact() {
     /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
 
   const {
-    value: enteredFirstName,
-    isValid: firstNameIsValid,
-    hasError: firstNameHasError,
-    valueChangeHandler: firstNameChangeHandler,
-    inputBlurHandler: firstNameBlurHandler,
-    reset: firstNameReset,
-  } = useInput((value) => value.trim() !== "");
-
-  const {
-    value: enteredLastName,
-    isValid: lastNameIsValid,
-    hasError: lastNameHasError,
-    valueChangeHandler: lastNameChangeHandler,
-    inputBlurHandler: lastNameBlurHandler,
-    reset: lastNameReset,
+    value: enteredName,
+    isValid: nameIsValid,
+    hasError: nameHasError,
+    valueChangeHandler: nameChangeHandler,
+    inputBlurHandler: nameBlurHandler,
+    reset: nameReset,
   } = useInput((value) => value.trim() !== "");
 
   const {
@@ -33,43 +24,53 @@ function Contact() {
     reset: emailReset,
   } = useInput((value) => regex.test(value));
 
+  const {
+    value: enteredMessage,
+    isValid: messageIsValid,
+    hasError: messageHasError,
+    valueChangeHandler: messageChangeHandler,
+    inputBlurHandler: messageBlurHandler,
+    reset: messageReset,
+  } = useInput((value) => value.trim() !== "");
+
   let formIsValid = false;
 
-  if (firstNameIsValid && lastNameIsValid && emailIsValid) {
+  if (nameIsValid && emailIsValid && messageIsValid) {
     formIsValid = true;
   }
 
   const formSubmissionHandler = (event) => {
     event.preventDefault();
 
-    if (!firstNameIsValid) {
+    if (!nameIsValid) {
       return;
     }
-    if (!lastNameIsValid) {
-      return;
-    }
+
     if (!emailIsValid) {
       return;
     }
+    if (!messageIsValid) {
+      return;
+    }
 
-    console.log(enteredFirstName);
-    console.log(enteredLastName);
+    console.log(enteredName);
     console.log(enteredEmail);
+    console.log(enteredMessage);
 
-    firstNameReset();
-    lastNameReset();
+    nameReset();
     emailReset();
+    messageReset();
   };
 
-  const firstNameInputClasses = firstNameHasError
-    ? `${styles.formControl} ${styles.invalid}`
-    : `${styles.formControl}`;
-
-  const lastNameInputClasses = lastNameHasError
+  const nameInputClasses = nameHasError
     ? `${styles.formControl} ${styles.invalid}`
     : `${styles.formControl}`;
 
   const emailInputClasses = emailHasError
+    ? `${styles.formControl} ${styles.invalid}`
+    : `${styles.formControl}`;
+
+  const messageInputClasses = messageHasError
     ? `${styles.formControl} ${styles.invalid}`
     : `${styles.formControl}`;
 
@@ -78,42 +79,46 @@ function Contact() {
       <h2 id="contact">Contact</h2>
       <form onSubmit={formSubmissionHandler}>
         <div className={styles.controlGroup}>
-          <div className={firstNameInputClasses}>
-            <label htmlFor="fistName" hidden>
-              First Name
+          <div className={nameInputClasses}>
+            <label htmlFor="name" hidden>
+              Name
             </label>
             <input
               type="text"
-              id="firstName"
-              value={enteredFirstName}
-              onChange={firstNameChangeHandler}
-              onBlur={firstNameBlurHandler}
+              id="name"
+              value={enteredName}
+              onChange={nameChangeHandler}
+              onBlur={nameBlurHandler}
+              placeholder="Name"
             />
           </div>
-          <div className={lastNameInputClasses}>
-            <label htmlFor="lastName" hidden>
-              Last Name
+
+          <div className={emailInputClasses}>
+            <label htmlFor="email" hidden>
+              E-Mail Address
             </label>
             <input
-              type="text"
-              id="lastName"
-              value={enteredLastName}
-              onChange={lastNameChangeHandler}
-              onBlur={lastNameBlurHandler}
+              type="email"
+              id="email"
+              value={enteredEmail}
+              onChange={emailChangeHandler}
+              onBlur={emailBlurHandler}
+              placeholder="Email"
             />
           </div>
-        </div>
-        <div className={emailInputClasses}>
-          <label htmlFor="email" hidden>
-            E-Mail Address
-          </label>
-          <input
-            type="email"
-            id="email"
-            value={enteredEmail}
-            onChange={emailChangeHandler}
-            onBlur={emailBlurHandler}
-          />
+          <div className={messageInputClasses}>
+            <label htmlFor="message" hidden>
+              Message
+            </label>
+            <textarea
+              id="message"
+              value={enteredMessage}
+              onChange={messageChangeHandler}
+              onBlur={messageBlurHandler}
+              placeholder="Message"
+              rows="10"
+            />
+          </div>
         </div>
         <div className={styles.formActions}>
           <button disabled={!formIsValid}>Submit</button>
