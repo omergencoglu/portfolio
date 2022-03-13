@@ -6,6 +6,12 @@
   grid-area: projects;
 }
 
+.projects h2 {
+  color: var(--blue);
+  font-size: 1.7rem;
+  letter-spacing: 0.05rem;
+}
+
 .cardsWrapper {
   display: flex;
   align-items: center;
@@ -23,5 +29,8 @@
 @media (min-width: 900px) {
   .projects {
     margin-left: 3vw;
+  }
+  .projects h2 {
+    font-size: 2rem;
   }
 }

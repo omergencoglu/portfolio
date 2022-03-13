@@ -20,6 +20,7 @@
 .card p {
   font-size: 0.9rem;
   line-height: 1.7rem;
+  margin-bottom: 2rem;
 }
 
 .cardFooter > span {
@@ -61,14 +62,12 @@
 @media (min-width: 650px) {
   .card {
     width: 38vw;
-    height: 25rem;
   }
 }
 
 @media (min-width: 900px) {
   .card {
     width: 32vw;
-    height: 25rem;
   }
   .card h3 {
     font-size: 1.3rem;
@@ -86,6 +85,5 @@
 @media (min-width: 1280px) {
   .card {
     width: 25vw;
-    height: 25rem;
   }
 }
