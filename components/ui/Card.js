@@ -9,16 +9,21 @@ const Card = (props) => {
   const classes = `${styles.card} ${props.className}`;
   return (
     <div className={classes}>
-      <div className={styles.imageContainer}>
-        <Image
-          src={props.img}
-          alt={props.alt}
-          width={1920}
-          height={1080}
-          layout="responsive"
-        />
+      <div>
+        <a href={props.previewLink} target="_blank" rel="noopener noreferrer">
+          <div className={styles.imageContainer}>
+            <Image
+              src={props.img}
+              alt={props.alt}
+              width={1920}
+              height={1080}
+              layout="responsive"
+            />
+          </div>
+          <h3>{props.title}</h3>
+        </a>
+        <p>{props.children}</p>
       </div>
-      <p>{props.children}</p>
       <div className={styles.cardFooter}>
         <span>{props.keywords}</span>
         <div className={styles.links}>

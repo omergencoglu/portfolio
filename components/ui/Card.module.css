@@ -11,6 +11,22 @@
   height: auto;
 }
 
+.card h3 {
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 1rem 0 0.5rem 0;
+}
+
+.card p {
+  font-size: 0.9rem;
+  line-height: 1.7rem;
+}
+
+.cardFooter > span {
+  color: rgb(192, 192, 192);
+  font-size: 0.7rem;
+}
+
 .cardFooter {
   display: flex;
   align-items: center;
@@ -53,6 +69,17 @@
   .card {
     width: 32vw;
     height: 25rem;
+  }
+  .card h3 {
+    font-size: 1.3rem;
+  }
+
+  .card p {
+    font-size: 1.1rem;
+  }
+
+  .cardFooter > span {
+    font-size: 0.9rem;
   }
 }
 
