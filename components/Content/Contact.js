@@ -53,9 +53,16 @@ function Contact() {
       return;
     }
 
-    console.log(enteredName);
-    console.log(enteredEmail);
-    console.log(enteredMessage);
+    const data = {
+      enteredName,
+      enteredEmail,
+      enteredMessage,
+    };
+
+    fetch("/api/contact", {
+      method: "post",
+      body: JSON.stringify(data),
+    });
 
     nameReset();
     emailReset();
