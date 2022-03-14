@@ -6,16 +6,17 @@
   grid-area: contact;
   height: 80vh;
   flex-direction: column;
-  background-image: url(/contact2.jpg);
+  background-image: url(/contact-light.png);
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
-  -webkit-clip-path: polygon(0 10%, 100% 0, 100% 80%, 0 100%);
-  clip-path: polygon(0 10%, 100% 0, 100% 80%, 0 100%);
+  -webkit-clip-path: polygon(0 5%, 100% 0, 100% 94%, 0 100%);
+  clip-path: polygon(0 5%, 100% 0, 100% 94%, 0 100%);
 }
 
 .contact > h2 {
   color: #fbfbfd;
+  letter-spacing: 0.1em;
 }
 
 .controlGroup {
@@ -40,17 +41,13 @@
   display: block;
 }
 
-.formControl label {
-  display: hidden;
-}
-
 .formControl input,
 .formControl textarea,
 .formControl select {
   font: inherit;
   padding: 0.5rem;
   border-radius: 4px;
-  border: 1px solid #ccc;
+  border: 2px solid white;
   width: 20rem;
   max-width: 100%;
 }
@@ -58,15 +55,21 @@
 .formControl textarea:focus,
 .formControl input:focus {
   outline: none;
-  border-color: #240370;
+  border: 2px solid #240370;
   background-color: #e0d4fd;
+}
+
+.formActions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .formActions button {
   font: inherit;
   background-color: #240370;
   color: white;
-  border: 1px solid #240370;
+  border: 2px solid #240370;
   padding: 0.5rem 1.5rem;
   border-radius: 4px;
   cursor: pointer;
@@ -87,13 +90,9 @@
   cursor: not-allowed;
 }
 
-.formActions button {
-  margin-left: 1rem;
-}
-
 .invalid textarea,
 .invalid input {
-  border: 1px solid #b40e0e;
+  border: 2px solid #e22121;
   background-color: #fddddd;
 }
 
@@ -101,4 +100,11 @@
 .invalid input:focus {
   border-color: #ff8800;
   background-color: #fbe8d2;
+}
+
+@media (min-width: 650px) {
+  .contact {
+    -webkit-clip-path: polygon(0 10%, 100% 0, 100% 80%, 0 100%);
+    clip-path: polygon(0 10%, 100% 0, 100% 80%, 0 100%);
+  }
 }
