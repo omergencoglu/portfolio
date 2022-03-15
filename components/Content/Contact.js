@@ -1,5 +1,7 @@
 import useInput from "../../hooks/use-input";
 
+import SubmitButton from "../UI/SubmitButton";
+
 import styles from "./Contact.module.css";
 
 function Contact() {
@@ -39,7 +41,7 @@ function Contact() {
     formIsValid = true;
   }
 
-  const formSubmissionHandler = (event) => {
+  const formSubmissionHandler = async (event) => {
     event.preventDefault();
 
     if (!nameIsValid) {
@@ -59,10 +61,15 @@ function Contact() {
       enteredMessage,
     };
 
-    fetch("/api/contact", {
+    const response = await fetch("/api/contact", {
       method: "post",
       body: JSON.stringify(data),
     });
+    console.log(response);
+
+    if (!response.ok) {
+      throw new Error(response.message || "Could not send your message!");
+    }
 
     nameReset();
     emailReset();
@@ -130,6 +137,7 @@ function Contact() {
         <div className={styles.formActions}>
           <button disabled={!formIsValid}>Submit</button>
         </div>
+        <SubmitButton />
       </form>
     </section>
   );
