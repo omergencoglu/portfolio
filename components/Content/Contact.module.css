@@ -16,16 +16,18 @@
 
 .contact > h2 {
   color: #fbfbfd;
-  letter-spacing: 0.1em;
+  text-indent: 0.05em;
+  letter-spacing: 0.05em;
+  font-size: 1.6rem;
 }
 
 .controlGroup {
   display: flex;
+  align-items: center;
+  justify-content: center;
   column-gap: 1rem;
   flex-direction: column;
   flex-wrap: nowrap;
-  align-items: center;
-  justify-content: center;
 }
 
 .controlGroup .formControl {
@@ -35,6 +37,9 @@
 
 .formControl {
   margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .formControl input {
@@ -48,8 +53,7 @@
   padding: 0.5rem;
   border-radius: 4px;
   border: 2px solid white;
-  width: 20rem;
-  max-width: 100%;
+  width: 80vw;
   font-size: 0.9rem;
 }
 
@@ -84,6 +88,12 @@
     -webkit-clip-path: polygon(0 10%, 100% 0, 100% 80%, 0 100%);
     clip-path: polygon(0 10%, 100% 0, 100% 80%, 0 100%);
   }
+
+  .formControl input,
+  .formControl textarea,
+  .formControl select {
+    width: 30vw;
+  }
 }
 
 @media (min-width: 900px) {
@@ -91,5 +101,9 @@
   .formControl textarea,
   .formControl select {
     font-size: 1.1rem;
+  }
+
+  .contact > h2 {
+    font-size: 2rem;
   }
 }

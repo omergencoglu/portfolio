@@ -4,4 +4,11 @@
   justify-content: center;
   align-items: center;
   grid-area: footer;
+  font-size: 0.9rem;
+}
+
+@media (min-width: 900px) {
+  .footer {
+    font-size: 1.1rem;
+  }
 }
