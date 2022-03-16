@@ -2,20 +2,21 @@ import styles from "./SubmitButton.module.css";
 
 function SubmitButton(props) {
   const classes =
-    props.state === "pending"
+    props.buttonState === "pending"
       ? styles.pending
-      : props.state === "success"
+      : props.buttonState === "success"
       ? styles.success
-      : props.state === "failed"
-      ? styles.failed
+      : props.buttonState === "error"
+      ? styles.error
       : null;
-
-  console.log(classes);
 
   return (
     <div className={styles.wrapper}>
-      <button className={`${styles.button} ${classes} ${styles.pending}`}>
-        Submit
+      <button
+        className={`${styles.button} ${classes}`}
+        disabled={props.disabled}
+      >
+        <span className={styles.buttonText}>Send</span>
       </button>
     </div>
   );

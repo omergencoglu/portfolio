@@ -10,8 +10,6 @@ async function handler(req, res) {
       Message: ${body.enteredMessage}
     `;
 
-  console.log(message);
-
   const data = {
     to: "omersaitgencoglu@gmail.com",
     from: process.env.MAIL_SENDER,

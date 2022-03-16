@@ -1,82 +1,86 @@
-.wrapper {
-  display: block;
-  position: relative;
-  height: 300px;
-  width: 300px;
-}
-
 .button {
-  display: inline-block;
-  min-width: 150px;
-  margin: 20px auto;
-  background: #8bc34a;
-  color: #fefefe;
-  font-size: 1.2em;
-  padding: 1em;
-  border-radius: 4px;
-  text-align: center;
   position: relative;
+  font: inherit;
+  background-color: #240370;
+  color: white;
+  border: 2px solid #240370;
+  padding: 0.8rem 1.8rem;
+  border-radius: 4px;
   cursor: pointer;
-  appearance: none;
-  -webkit-appearance: none;
-  border: 0;
-  transition: border-radius linear 0.05s, width linear 0.05s;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
 }
 
-.button.animate {
-  width: 150px/2.2;
-  height: 150px/2.2;
-  min-width: 0;
-  border-radius: 50%;
+.button:hover,
+.button:active {
+  background-color: #33059e;
+  border-color: #33059e;
 }
 
-.button.pending {
-  color: transparent;
+.button:disabled,
+.button:disabled:hover,
+.button:disabled:active {
+  background-color: #ccc;
+  color: #464646;
+  border-color: #ccc;
+  cursor: not-allowed;
+}
+
+.buttonText {
+  transition: all 0.2s;
+}
+
+.button.pending:after {
   position: absolute;
+  color: transparent;
   content: "";
-  width: 150px/6;
-  height: 150px/6;
-  border: 4px solid #fefefe;
+  width: 20px;
+  height: 20px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  border: 5px solid transparent;
+  border-top-color: #ffffff;
   border-radius: 50%;
   border-left-color: transparent;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  animation: spin ease-in infinite forwards;
-  animation-name: spin;
-  -webkit-animation-name: spin;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-timing-function: ease-in-out;
-  animation-duration: 2.5s;
-  -webkit-animation-duration: 2.5s;
-  animation-fill-mode: forwards;
-  -webkit-animation-fill-mode: forwards;
+  animation: spin 1s ease infinite;
 }
 
-.button.success:before {
+.button.success {
+  background-color: #8bc34a;
+  border-color: #8bc34a;
+}
+
+.button.success:hover,
+.button.success:active {
+  background-color: #8bc34a;
+  border-color: #8bc34a;
+}
+
+.button.success:after {
   position: absolute;
   content: "";
-  width: 150px/6;
-  height: 150px/12;
+  width: 26px;
+  height: 13px;
   border: 4px solid #fefefe;
   border-right: 0;
   border-top: 0;
   left: 50%;
-  top: 50%;
+  top: 40%;
   -webkit-transform: translate(-50%, -50%) rotate(0deg) scale(0);
   transform: translate(-50%, -50%) rotate(0deg) scale(0);
   -webkit-animation: success ease-in 0.15s forwards;
   animation: success ease-in 0.15s forwards;
-  animation-delay: 2.5s;
 }
 
 .button.error {
   position: relative;
   -webkit-animation: vibrate ease-in 0.5s forwards;
   animation: vibrate ease-in 0.5s forwards;
-  -webkit-animation-delay: 2.5s;
-  animation-delay: 2.5s;
+  background-color: #f44336;
+  border-color: #f44336;
 }
 
 .button.error:before {
@@ -92,32 +96,32 @@
   transform: translate(-50%, -50%) scale(0);
   -webkit-animation: error ease-in 0.5s forwards;
   animation: error ease-in 0.5s forwards;
-  animation-delay: 2.5s;
+}
+
+.button.pending .buttonText,
+.button.success .buttonText,
+.button.error .buttonText {
+  visibility: hidden;
+  opacity: 0;
 }
 
 @keyframes spin {
-  0% {
-    transform: translate(-50%, -50%) rotate(0deg) scale(1);
+  from {
+    transform: rotate(0turn);
   }
-  90% {
-    transform: translate(-50%, -50%) rotate(1080deg) scale(1);
-  }
-  100% {
-    transform: scale(0);
+
+  to {
+    transform: rotate(1turn);
   }
 }
 
 @-webkit-keyframes spin {
-  0% {
-    -webkit-transform: translate(-50%, -50%) rotate(0deg) scale(1);
+  from {
+    -webkit-transform: rotate(0turn);
   }
 
-  98% {
-    -webkit-transform: translate(-50%, -50%) rotate(1080deg) scale(1);
-  }
-
-  100% {
-    -webkit-transform: translate(-50%, -50%) rotate(1080deg) scale(0);
+  to {
+    -webkit-transform: rotate(1turn);
   }
 }
 
@@ -145,7 +149,6 @@
   }
   to {
     transform: translate(-50%, -50%) scale(1);
-    background-color: #f44336;
   }
 }
 
@@ -155,7 +158,6 @@
   }
   to {
     -webkit-transform: translate(-50%, -50%) scale(1);
-    background-color: #f44336;
   }
 }
 
@@ -166,20 +168,27 @@
   85%,
   100% {
     left: 0;
-    background-color: #f44336;
   }
   10%,
   40%,
   90%,
   70% {
     left: -2px;
-    background-color: #f44336;
   }
   20%,
   50%,
   80%,
   95% {
     left: 2px;
-    background-color: #f44336;
+  }
+}
+
+@media (min-width: 900px) {
+  .button.success:after {
+    width: 30px;
+    height: 15px;
+  }
+  .button {
+    font-size: 1.1rem;
   }
 }

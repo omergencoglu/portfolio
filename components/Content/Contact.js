@@ -1,3 +1,4 @@
+import { useState } from "react";
 import useInput from "../../hooks/use-input";
 
 import SubmitButton from "../UI/SubmitButton";
@@ -5,6 +6,8 @@ import SubmitButton from "../UI/SubmitButton";
 import styles from "./Contact.module.css";
 
 function Contact() {
+  const [buttonState, setButtonState] = useState(null);
+
   const regex =
     /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
 
@@ -44,6 +47,8 @@ function Contact() {
   const formSubmissionHandler = async (event) => {
     event.preventDefault();
 
+    setButtonState("pending");
+
     if (!nameIsValid) {
       return;
     }
@@ -65,15 +70,15 @@ function Contact() {
       method: "post",
       body: JSON.stringify(data),
     });
-    console.log(response);
 
     if (!response.ok) {
-      throw new Error(response.message || "Could not send your message!");
+      setButtonState("error");
+    } else {
+      setButtonState("success");
+      nameReset();
+      emailReset();
+      messageReset();
     }
-
-    nameReset();
-    emailReset();
-    messageReset();
   };
 
   const nameInputClasses = nameHasError
@@ -135,9 +140,8 @@ function Contact() {
           </div>
         </div>
         <div className={styles.formActions}>
-          <button disabled={!formIsValid}>Submit</button>
+          <SubmitButton disabled={!formIsValid} buttonState={buttonState} />
         </div>
-        <SubmitButton />
       </form>
     </section>
   );

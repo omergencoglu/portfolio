@@ -50,6 +50,7 @@
   border: 2px solid white;
   width: 20rem;
   max-width: 100%;
+  font-size: 0.9rem;
 }
 
 .formControl textarea:focus,
@@ -63,31 +64,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.formActions button {
-  font: inherit;
-  background-color: #240370;
-  color: white;
-  border: 2px solid #240370;
-  padding: 0.5rem 1.5rem;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.formActions button:hover,
-.formActions button:active {
-  background-color: #33059e;
-  border-color: #33059e;
-}
-
-.formActions button:disabled,
-.formActions button:disabled:hover,
-.formActions button:disabled:active {
-  background-color: #ccc;
-  color: #464646;
-  border-color: #ccc;
-  cursor: not-allowed;
+  position: relative;
 }
 
 .invalid textarea,
@@ -106,5 +83,13 @@
   .contact {
     -webkit-clip-path: polygon(0 10%, 100% 0, 100% 80%, 0 100%);
     clip-path: polygon(0 10%, 100% 0, 100% 80%, 0 100%);
+  }
+}
+
+@media (min-width: 900px) {
+  .formControl input,
+  .formControl textarea,
+  .formControl select {
+    font-size: 1.1rem;
   }
 }
