@@ -1,3 +1,42 @@
+:root {
+  --blue: #2e86de;
+  --black: #000;
+  --color-primary-accent: #5b34da;
+  --color-primary: #000;
+  --color-background: #fff;
+  --color-secondary-accent: #358ef1;
+}
+
+[data-theme="dark"] {
+  --background: black;
+  --foreground: white;
+  --color-primary-accent: #9d86e9;
+  --color-secondary-accent: #61dafb;
+  --color-primary: #fff;
+  --color-background: #000;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #599adb;
+  border-radius: 7px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--blue);
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Source+Code+Pro&display=swap");
 
 html,
@@ -24,30 +63,4 @@ h2 {
   letter-spacing: 0.4em;
   text-indent: 0.4em;
   font-size: 1.4rem;
-}
-
-:root {
-  --blue: #2e86de;
-  --black: #000;
-}
-
-/* width */
-::-webkit-scrollbar {
-  width: 15px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #599adb;
-  border-radius: 7px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: var(--blue);
 }
