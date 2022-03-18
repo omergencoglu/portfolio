@@ -14,7 +14,6 @@ function Navbar() {
 
   const responsiveNavbarHandler = () => {
     setItemsVisible(itemsVisible ? false : true);
-    console.log(itemsVisible);
   };
 
   if (isDesktop === true && itemsVisible === true) {

@@ -5,7 +5,7 @@ function ExternalLink() {
     <svg viewBox="0 0 24 24">
       <g
         strokeWidth="2.1"
-        stroke="#181616"
+        stroke="var(--color-icon-fill)"
         fill="none"
         strokeLinecap="round"
         strokeLinejoin="round"

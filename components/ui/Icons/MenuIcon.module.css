@@ -8,7 +8,7 @@
 .bar3 {
   width: 30px;
   height: 5px;
-  background-color: var(--black);
+  background-color: var(--color-navbar-primary);
   margin: 5px 0;
   transition: 0.4s;
   border-radius: 30px;
