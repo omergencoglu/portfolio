@@ -1,5 +1,5 @@
 :root {
-  --color-primary: #2e86de;
+  --color-primary: #2196f3;
   --color-primary-accent: #599adb;
   --color-background: #fbfbfd;
   --color-secondary-background: #f1f1f1;
@@ -23,19 +23,12 @@
   --contact-background: url(/contact-light.png);
 
   --color-icon-fill: #181616;
-
   --color-shadow: rgba(0, 0, 0, 0.25);
-
-  --black: #000;
 }
 
 [data-theme="dark"] {
-  --background: black;
-  --foreground: white;
-  --color-primary-accent: #9d86e9;
-  --color-secondary-accent: #61dafb;
-  --color-primary: #fff;
   --color-background: #000;
+  --contact-background: url(/contact-dark.png);
 }
 
 /* width */
