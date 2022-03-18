@@ -1,10 +1,7 @@
-import styles from "./Html5.module.css";
-
-function Html5(props) {
-  const classes = `${styles.card} ${props.className}`;
+function Html5() {
   return (
-    <figure className={classes}>
-      <svg viewBox="0 0 128 128" className={styles.icon}>
+    <figure>
+      <svg viewBox="0 0 128 128" style={{ marginBottom: 0.5 + "rem" }}>
         <title>HTML5</title>
         <path
           fill="#E44D26"

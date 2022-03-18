@@ -1,10 +1,7 @@
-import styles from "./Reactjs.module.css";
-
-function Reactjs(props) {
-  const classes = `${styles.card} ${props.className}`;
+function Reactjs() {
   return (
-    <figure className={classes}>
-      <svg viewBox="0 0 128 128" className={styles.icon}>
+    <figure>
+      <svg viewBox="0 0 128 128" style={{ marginBottom: 0.3 + "rem" }}>
         <title>React</title>
         <g fill="#61DAFB">
           <circle cx="64" cy="64" r="11.4"></circle>

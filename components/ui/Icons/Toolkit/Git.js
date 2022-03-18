@@ -1,10 +1,7 @@
-import styles from "./Git.module.css";
-
-function Git(props) {
-  const classes = `${styles.card} ${props.className}`;
+function Git() {
   return (
-    <figure className={classes}>
-      <svg viewBox="0 0 128 128" className={styles.icon}>
+    <figure>
+      <svg viewBox="0 0 128 128" style={{ marginBottom: 0.5 + "rem" }}>
         <title>git</title>
         <path
           fill="#F34F29"

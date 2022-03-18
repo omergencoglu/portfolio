@@ -1,10 +1,7 @@
-import styles from "./VSCode.module.css";
-
-function VScode(props) {
-  const classes = `${styles.figure} ${props.className}`;
+function VScode() {
   return (
-    <figure className={classes}>
-      <svg viewBox="0 0 128 128" className={styles.icon}>
+    <figure>
+      <svg viewBox="0 0 128 128" style={{ marginBottom: 0.3 + "rem" }}>
         <title>VS Code</title>
         <path
           d="M3.656 45.043s-3.027-2.191.61-5.113l8.468-7.594s2.426-2.559 4.989-.328l78.175 59.328v28.45s-.039 4.468-5.757 3.976zm0 0"
