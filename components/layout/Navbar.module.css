@@ -4,11 +4,11 @@
   flex-direction: column;
   align-items: center;
   height: 80px;
-  transition: height 1s ease-in-out;
+  transition: height 400ms ease-in-out;
 }
 
 .header.menuOpen {
-  height: 280px;
+  height: 260px;
 }
 
 .header ul {
@@ -36,7 +36,7 @@
   background-color: var(--color-background);
   padding: 0 0.8rem;
   box-shadow: var(--color-navbar-shadow) 0px 4px 12px;
-  transition: box-shadow 1s ease-in-out;
+  transition: box-shadow 400ms ease-in-out;
   z-index: 2;
 }
 

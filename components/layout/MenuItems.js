@@ -8,7 +8,7 @@ function MenuItems(props) {
   return (
     <CSSTransition
       in={props.onItemsVisible}
-      timeout={1000}
+      timeout={400}
       classNames={slideTransition}
       unmountOnExit
     >

@@ -20,8 +20,9 @@ function ToggleSwitch() {
 
   return (
     <Fragment>
-      <label className={styles.switch}>
+      <label className={styles.switch} htmlFor="themeChanger">
         <input
+          id="themeChanger"
           type="checkbox"
           onChange={themeChanger}
           checked={theme === "dark" ? "checked" : ""}
