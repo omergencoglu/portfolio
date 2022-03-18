@@ -66,7 +66,7 @@ function Contact() {
       enteredMessage,
     };
 
-    const response = await fetch("/api/contact", {
+    const response = await fetch("/api/send-email", {
       method: "post",
       body: JSON.stringify(data),
     });

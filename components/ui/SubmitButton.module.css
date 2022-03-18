@@ -1,9 +1,9 @@
 .button {
   position: relative;
   font: inherit;
-  background-color: #240370;
+  background-color: var(--color-primary);
   color: white;
-  border: 2px solid #240370;
+  border: 2px solid var(--color-primary);
   padding: 0.8rem 1.8rem;
   border-radius: 4px;
   cursor: pointer;
@@ -13,8 +13,8 @@
 
 .button:hover,
 .button:active {
-  background-color: #33059e;
-  border-color: #33059e;
+  background-color: var(--color-primary-accent);
+  border-color: var(--color-primary-accent);
 }
 
 .button:disabled,

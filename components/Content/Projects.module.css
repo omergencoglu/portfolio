@@ -10,6 +10,7 @@
   color: var(--color-primary);
   font-size: 1.7rem;
   letter-spacing: 0.05rem;
+  text-indent: 0.05em;
 }
 
 .cardsWrapper {

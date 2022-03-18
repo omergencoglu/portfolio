@@ -18,7 +18,7 @@
 .title {
   background-image: linear-gradient(
     0deg,
-    var(--color-primary-accent),
+    var(--color-gradient),
     var(--color-primary)
   );
   background-size: 10px 10px;
