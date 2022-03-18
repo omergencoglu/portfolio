@@ -2,14 +2,14 @@
   position: absolute;
   top: 4rem;
   z-index: 1;
-  background-color: #e7e7e7;
+  background-color: var(--color-secondary-background);
   width: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
   height: auto;
   padding: 2rem;
-  box-shadow: inset 0px -11px 15px -10px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0px -11px 15px -10px var(--color-shadow);
 }
 
 .links li {

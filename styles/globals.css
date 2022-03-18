@@ -1,10 +1,33 @@
 :root {
-  --blue: #2e86de;
+  --color-primary: #2e86de;
+  --color-primary-accent: #599adb;
+  --color-background: #fbfbfd;
+  --color-secondary-background: #f1f1f1;
+  --color-tertiary-background: #ccc;
+
+  --color-navbar-primary: #1a1c20;
+  --color-navbar-text-hover: #cecece;
+  --color-navbar-shadow: rgba(46, 134, 222, 0.1);
+  --color-navbar-menu-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
+  --color-input-focus: #e0d4fd;
+  --color-input-focus-border: #240370;
+  --color-invalid: #fddddd;
+  --color-invalid-border: #e22121;
+  --color-invalid-focus: #fbe8d2;
+  --color-invalid-focus-border: #ff8800;
+  --contact-background: url(/contact-light.png);
+
+  --color-social-fill: #181616;
+
+  --color-icon-fill: #181616;
+
+  --color-shadow: rgba(0, 0, 0, 0.3);
+
   --black: #000;
-  --color-primary-accent: #5b34da;
-  --color-primary: #000;
-  --color-background: #fff;
-  --color-secondary-accent: #358ef1;
+
+  --color-secondary-accent: ;
 }
 
 [data-theme="dark"] {
@@ -23,18 +46,18 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: var(--color-secondary-background);
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #599adb;
+  background: var(--color-primary-accent);
   border-radius: 7px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--blue);
+  background: var(--color-primary);
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Source+Code+Pro&display=swap");
@@ -44,7 +67,7 @@ body {
   height: 100%;
   width: 100%;
   font-family: Source Code Pro, monospace;
-  background-color: #fbfbfd;
+  background-color: var(--color-background);
 }
 
 * {

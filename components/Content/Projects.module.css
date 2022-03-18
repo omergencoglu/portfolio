@@ -7,7 +7,7 @@
 }
 
 .projects h2 {
-  color: var(--blue);
+  color: var(--color-primary);
   font-size: 1.7rem;
   letter-spacing: 0.05rem;
 }

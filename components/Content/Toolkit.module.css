@@ -16,7 +16,11 @@
 }
 
 .title {
-  background-image: linear-gradient(0deg, #64a0e6, #3080de);
+  background-image: linear-gradient(
+    0deg,
+    var(--color-primary-accent),
+    var(--color-primary)
+  );
   background-size: 10px 10px;
   background-repeat: repeat-x;
   background-position: bottom;

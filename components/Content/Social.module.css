@@ -39,6 +39,6 @@
     width: 2px;
     height: 90px;
     margin: 0 auto;
-    background-color: #ccc;
+    background-color: var(--color-tertiary-background);
   }
 }

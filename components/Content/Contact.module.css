@@ -6,7 +6,7 @@
   grid-area: contact;
   height: 80vh;
   flex-direction: column;
-  background-image: url(/contact-light.png);
+  background-image: var(--contact-background);
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -15,7 +15,7 @@
 }
 
 .contact > h2 {
-  color: #fbfbfd;
+  color: var(--color-background);
   text-indent: 0.05em;
   letter-spacing: 0.05em;
   font-size: 1.6rem;
@@ -52,7 +52,8 @@
   font: inherit;
   padding: 0.5rem;
   border-radius: 4px;
-  border: 2px solid white;
+  background-color: var(--color-background);
+  border: 2px solid var(--color-background);
   width: 80vw;
   font-size: 0.9rem;
 }
@@ -60,8 +61,8 @@
 .formControl textarea:focus,
 .formControl input:focus {
   outline: none;
-  border: 2px solid #240370;
-  background-color: #e0d4fd;
+  border: 2px solid var(--color-input-focus-border);
+  background-color: var(--color-input-focus);
 }
 
 .formActions {
@@ -73,14 +74,14 @@
 
 .invalid textarea,
 .invalid input {
-  border: 2px solid #e22121;
-  background-color: #fddddd;
+  border: 2px solid var(--color-invalid-border);
+  background-color: var(--color-invalid);
 }
 
 .invalid textarea:focus,
 .invalid input:focus {
-  border-color: #ff8800;
-  background-color: #fbe8d2;
+  border-color: var(--color-invalid-focus-border);
+  background-color: var(--color-invalid-focus);
 }
 
 @media (min-width: 650px) {

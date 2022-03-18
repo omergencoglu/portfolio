@@ -18,7 +18,13 @@
 .header a {
   text-decoration: none;
   font-size: 1.3rem;
-  color: #1a1c20;
+  color: var(--color-navbar-primary);
+}
+
+.header a:hover,
+.header a:active,
+.header a.active {
+  color: var(--color-navbar-text-hover);
 }
 
 .navbar {
@@ -27,22 +33,21 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #fdfdff;
+  background-color: var(--color-background);
   padding: 0 0.8rem;
-  box-shadow: rgba(46, 134, 222, 0.1) 0px 4px 12px;
+  box-shadow: var(--color-navbar-shadow) 0px 4px 12px;
   transition: box-shadow 1s ease-in-out;
   z-index: 2;
 }
 
 .navbar.menuOpen {
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
-    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  box-shadow: var(--color-navbar-menu-shadow);
 }
 
 .logo {
   font-size: 2rem;
   letter-spacing: 0.2rem;
-  color: var(--blue);
+  color: var(--color-primary);
   font-weight: bold;
 }
 
@@ -53,12 +58,6 @@
 
 .navbar li {
   margin-left: 2rem;
-}
-
-.navbar a:hover,
-.navbar a:active,
-.navbar a.active {
-  color: #cecece;
 }
 
 .links {

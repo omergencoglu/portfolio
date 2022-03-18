@@ -1,10 +1,7 @@
-import styles from "./Css3.module.css";
-
-function Css3(props) {
-  const classes = `${styles.card} ${props.className}`;
+function Css3() {
   return (
-    <figure className={classes}>
-      <svg viewBox="0 0 128 128" className={styles.icon}>
+    <figure>
+      <svg viewBox="0 0 128 128" style={{ marginBottom: 0.5 + "rem" }}>
         <title>CSS3</title>
         <path
           fill="#1572B6"
