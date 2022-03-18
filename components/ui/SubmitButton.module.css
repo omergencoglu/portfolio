@@ -49,14 +49,14 @@
 }
 
 .button.success {
-  background-color: #8bc34a;
-  border-color: #8bc34a;
+  background-color: var(--color-submit-success);
+  border-color: var(--color-submit-success);
 }
 
 .button.success:hover,
 .button.success:active {
-  background-color: #8bc34a;
-  border-color: #8bc34a;
+  background-color: var(--color-submit-success);
+  border-color: var(--color-submit-success);
 }
 
 .button.success:after {
@@ -79,8 +79,8 @@
   position: relative;
   -webkit-animation: vibrate ease-in 0.5s forwards;
   animation: vibrate ease-in 0.5s forwards;
-  background-color: #f44336;
-  border-color: #f44336;
+  background-color: var(--color-submit-error);
+  border-color: var(--color-submit-error);
 }
 
 .button.error:before {

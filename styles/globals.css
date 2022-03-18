@@ -24,6 +24,9 @@
   --color-invalid-focus-border: #ff8800;
   --contact-background: url(/contact-light.png);
 
+  --color-submit-success: #41d673;
+  --color-submit-error: #ff543d;
+
   --color-icon-fill: #181616;
   --color-shadow: rgba(0, 0, 0, 0.25);
 }
@@ -53,6 +56,9 @@
   --color-invalid-focus: #4b2800;
   --color-invalid-focus-border: #ff8800;
   --contact-background: url(/contact-dark.png);
+
+  --color-submit-success: #00a171;
+  --color-submit-error: #ca0033;
 
   --color-icon-fill: #fff;
   --color-shadow: rgba(255, 255, 255, 0.25);
