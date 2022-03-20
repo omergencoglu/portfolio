@@ -63,6 +63,17 @@
     width: 4rem;
     font-size: 0.9rem;
   }
+
+  .iconsWrapper figcaption {
+    opacity: 0;
+    transform: translateY(2rem);
+    transition: all 400ms;
+  }
+
+  .iconsWrapper figure:hover figcaption {
+    opacity: 100;
+    transform: translateY(0);
+  }
 }
 
 @media (min-width: 1280px) {
