@@ -8,7 +8,7 @@ import styles from "./Card.module.css";
 const Card = (props) => {
   const classes = `${styles.card} ${props.className}`;
   return (
-    <div className={classes}>
+    <div className={classes} data-aos="fade-up">
       <div>
         <a href={props.previewLink} target="_blank" rel="noopener noreferrer">
           <div className={styles.imageContainer}>

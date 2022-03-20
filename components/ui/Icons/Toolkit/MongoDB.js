@@ -1,6 +1,6 @@
 function MongoDB() {
   return (
-    <figure>
+    <figure data-aos="fade-up">
       <svg viewBox="0 0 128 128" style={{ marginBottom: 0.2 + "rem" }}>
         <title>MongoDB</title>
         <path

@@ -94,7 +94,7 @@ function Contact() {
     : `${styles.formControl}`;
 
   return (
-    <section className={styles.contact}>
+    <section className={styles.contact} data-aos="fade-up">
       <h2 id="contact">Contact</h2>
       <form onSubmit={formSubmissionHandler}>
         <div className={styles.controlGroup}>

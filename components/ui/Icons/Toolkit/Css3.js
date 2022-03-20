@@ -1,6 +1,6 @@
 function Css3() {
   return (
-    <figure>
+    <figure data-aos="fade-up">
       <svg viewBox="0 0 128 128" style={{ marginBottom: 0.5 + "rem" }}>
         <title>CSS3</title>
         <path

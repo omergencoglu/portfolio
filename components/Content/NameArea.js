@@ -4,7 +4,7 @@ import styles from "./NameArea.module.css";
 
 function NameArea() {
   return (
-    <section className={styles.nameArea}>
+    <section className={styles.nameArea} data-aos="zoom-in">
       <div className={styles.imageDiv}>
         <Image
           src="/logo.png"

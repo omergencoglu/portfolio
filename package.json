@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@sendgrid/mail": "^7.6.2",
+    "aos": "^2.3.4",
     "i": "^0.3.7",
     "next": "12.1.0",
     "next-themes": "^0.1.1",

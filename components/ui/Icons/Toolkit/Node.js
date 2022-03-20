@@ -1,6 +1,6 @@
 function Node() {
   return (
-    <figure>
+    <figure data-aos="fade-up">
       <svg viewBox="0 0 128 128">
         <title>Node.js</title>
         <path
