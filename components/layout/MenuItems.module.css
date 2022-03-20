@@ -10,6 +10,7 @@
   height: auto;
   padding: 2rem;
   box-shadow: inset 0px -11px 15px -10px var(--color-shadow);
+  transition: all 400ms ease-in-out;
 }
 
 .links li {

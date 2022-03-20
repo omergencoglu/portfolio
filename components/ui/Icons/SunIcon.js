@@ -6,7 +6,7 @@ function SunIcon() {
       height="23"
       viewBox="0 0 25 25"
       fill="none"
-      stroke="currentColor"
+      stroke="#181616"
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"

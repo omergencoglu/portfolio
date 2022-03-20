@@ -37,7 +37,7 @@
   background-color: var(--color-background);
   padding: 0 0.8rem;
   box-shadow: var(--color-navbar-shadow) 0px 4px 12px;
-  transition: box-shadow 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
   z-index: 2;
 }
 
