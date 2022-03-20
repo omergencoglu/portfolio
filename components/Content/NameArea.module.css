@@ -3,19 +3,17 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 5vw;
+  padding: 0 5vw;
   grid-area: name;
   position: relative;
-  margin-top: 5rem;
-}
-
-.image {
-  border-radius: 100%;
+  min-height: 90vh;
 }
 
 .imageDiv {
   width: 70%;
-  height: 100%;
+}
+.imageDiv > span {
+  border-radius: 100%;
 }
 
 .text {
@@ -54,19 +52,28 @@
   font-size: 3vw;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 900px) {
   .nameArea {
     flex-direction: row;
     padding-left: 8vw;
   }
+
   .imageDiv {
-    width: 50%;
+    padding: 5%;
     height: 100%;
+    width: 60%;
+  }
+  .imageDiv > span {
+    height: 100%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
   }
 
   .text {
     display: block;
-    margin: 0 0 0 5%;
     text-align: left;
   }
 
