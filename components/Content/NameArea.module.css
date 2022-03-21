@@ -74,6 +74,7 @@
   }
 
   .text {
+    margin-top: 1vw;
     display: block;
     text-align: left;
   }
