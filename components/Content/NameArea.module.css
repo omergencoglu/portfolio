@@ -31,11 +31,11 @@
 
 .myName {
   color: var(--color-primary);
-  font-size: 3vw;
+  font-size: 3.5vw;
 }
 
 .name {
-  font-size: 5vw;
+  font-size: 6vw;
   font-weight: bold;
   width: 85%;
   background-image: linear-gradient(
@@ -49,7 +49,8 @@
 }
 
 .paragraph {
-  font-size: 3vw;
+  margin-top: 0.5rem;
+  font-size: 3.5vw;
 }
 
 @media (min-width: 900px) {
@@ -77,9 +78,18 @@
     text-align: left;
   }
 
+  .myName {
+    font-size: 3vw;
+  }
+
   .name {
+    font-size: 5vw;
     width: 90%;
     background-size: 30px 30px;
+  }
+
+  .paragraph {
+    font-size: 3vw;
   }
 
   .text p {

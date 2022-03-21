@@ -54,7 +54,6 @@
   .iconsWrapper {
     flex-wrap: nowrap;
     flex-direction: column;
-    margin-left: 1vw;
   }
 
   .iconsWrapper > * {
@@ -80,6 +79,10 @@
   .iconsWrapper > * {
     height: 4.5rem;
     width: 4.5rem;
+  }
+
+  .title {
+    margin: 0 0 0 -2rem;
   }
   .toolkit {
     margin-right: 1vw;
