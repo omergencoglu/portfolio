@@ -8,12 +8,14 @@ function Projects() {
       <h2 id="projects">PROJECTS</h2>
       <div className={styles.cardsWrapper}>
         <Card
-          img="/weather-app.png"
-          keywords="React Next.js"
-          title="Test Project"
+          img="/quotes.png"
+          keywords="React Firebase"
+          title="Quotes"
+          previewLink="https://quotes-113c7.web.app/quotes"
+          githubLink="https://github.com/omergencoglu/quotes-react-router"
         >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-          eligendi porro officia dignissimos natus?
+          You can add new quotes and comments to the quotes. View the quotes
+          individually.
         </Card>
         <Card
           img="/yelpcamp.png"
@@ -51,44 +53,51 @@ function Projects() {
           CRUD application with Express and MongoDB.
         </Card>
         <Card
-          img="/weather-app.png"
+          img="/portfolio.png"
           keywords="React Next.js"
-          title="Test Project"
+          title="Portfolio Project"
+          previewLink="https://omergencoglu.dev"
+          githubLink="https://github.com/omergencoglu/portfolio"
         >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-          eligendi porro officia dignissimos natus?
+          This is my portfolio website. You can find more information about me,
+          my projects and more...
         </Card>
         <Card
           img="/weather-app.png"
-          keywords="React Next.js"
-          title="Test Project"
+          keywords="Express Node.js"
+          title="Weatherlify"
+          previewLink="https://weatherlify.herokuapp.com/"
+          githubLink="https://github.com/omergencoglu/weather-app"
         >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-          eligendi porro officia dignissimos natus?
+          Get realtime weather information of searched locations with changing
+          background gradients.
         </Card>
         <Card
-          img="/weather-app.png"
-          keywords="React Next.js"
-          title="Test Project"
+          img="/grocery-list.png"
+          keywords="React"
+          title="Grocery List App"
+          githubLink="https://github.com/omergencoglu/grocery-list-react"
         >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-          eligendi porro officia dignissimos natus?
+          Add, delete grocery items to the list.
         </Card>
         <Card
-          img="/weather-app.png"
-          keywords="React Next.js"
-          title="Test Project"
+          img="/expense-tracker.png"
+          keywords="React"
+          title="Expense Tracker"
+          githubLink="https://github.com/omergencoglu/expense-tracker"
         >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-          eligendi porro officia dignissimos natus?
+          Log your expenses with expense tracker. You can see your monthly
+          expenses on graphs.
         </Card>
         <Card
-          img="/weather-app.png"
-          keywords="React Next.js"
-          title="Test Project"
+          img="/meetups.png"
+          keywords="React Next.js MongoDB"
+          title="Meetups App"
+          previewLink="https://nextjs-meetups-app-seven.vercel.app/"
+          githubLink="https://github.com/omergencoglu/nextjs-meetups-app"
         >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-          eligendi porro officia dignissimos natus?
+          You can add meetups and show the details on a meetup&apos;s individual
+          detail page.
         </Card>
       </div>
     </section>
