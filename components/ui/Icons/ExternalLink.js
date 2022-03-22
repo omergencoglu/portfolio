@@ -3,6 +3,7 @@ import React from "react";
 function ExternalLink() {
   return (
     <svg viewBox="0 0 24 24">
+      <title>External Link</title>
       <g
         strokeWidth="2.1"
         stroke="var(--color-icon-fill)"

@@ -92,7 +92,7 @@ function Projects() {
           githubLink="https://github.com/omergencoglu/expense-tracker"
         >
           An Expense Tracker app in which you can log your expenses. You can see
-          and filter your expenses by year. React was used for this project
+          and filter your expenses by year. React was used for this project.
         </Card>
         <Card
           img="/meetups.png"

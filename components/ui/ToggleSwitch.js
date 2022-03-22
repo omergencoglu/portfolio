@@ -20,7 +20,7 @@ function ToggleSwitch() {
 
   return (
     <Fragment>
-      <label className={styles.switch} htmlFor="themeChanger">
+      <label className={styles.switch}>
         <input
           id="themeChanger"
           type="checkbox"

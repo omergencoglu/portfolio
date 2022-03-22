@@ -9,10 +9,12 @@ const Card = (props) => {
   return (
     <div className={styles.card} data-aos="fade-up">
       <a
-        href={props.previewLink}
+        href={props.previewLink || "/"}
         target="_blank"
         rel="noopener noreferrer"
-        className={styles.cardHeader}
+        className={`${styles.cardHeader} ${
+          !props.previewLink && styles.preventLink
+        }`}
       >
         <Image
           src={props.img}
