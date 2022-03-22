@@ -14,8 +14,9 @@ function Projects() {
           previewLink="https://quotes-113c7.web.app/quotes"
           githubLink="https://github.com/omergencoglu/quotes-react-router"
         >
-          You can add new quotes and comments to the quotes. View the quotes
-          individually.
+          A Quotes app that you can add new quotes and comment to the existing
+          ones. Quotes can be viewed invidually. I used React and Firebase for
+          this project.
         </Card>
         <Card
           img="/yelpcamp.png"
@@ -25,7 +26,7 @@ function Projects() {
           githubLink="https://github.com/omergencoglu/yelpcamp"
         >
           Fully functional NodeJs web app - Allows users to view, post, comment
-          on campgrounds worldwide.
+          on campgrounds worldwide. I used Express and MongoDB for this project.
         </Card>
         <Card
           img="/google-dark.png"
@@ -42,7 +43,9 @@ function Projects() {
           title="Food Ordering App"
           githubLink="https://github.com/omergencoglu/food-order-app-react"
         >
-          You can add items to your cart and cart will update automatically.
+          A Food Ordering App where you can add items to your cart. The cart
+          will update itself automatically. I used React and Firebase for this
+          project.
         </Card>
         <Card
           img="/user-management.png"
@@ -50,7 +53,8 @@ function Projects() {
           title="User Management"
           githubLink="https://github.com/omergencoglu/user-management-system-crud"
         >
-          CRUD application with Express and MongoDB.
+          An app which has create, read, update and delete (CRUD) functionality.
+          I used Express and MongoDB for this project.
         </Card>
         <Card
           img="/portfolio.png"
@@ -60,7 +64,7 @@ function Projects() {
           githubLink="https://github.com/omergencoglu/portfolio"
         >
           This is my portfolio website. You can find more information about me,
-          my projects and more...
+          my projects and more. React and Next.js were used.
         </Card>
         <Card
           img="/weather-app.png"
@@ -69,8 +73,8 @@ function Projects() {
           previewLink="https://weatherlify.herokuapp.com/"
           githubLink="https://github.com/omergencoglu/weather-app"
         >
-          Get realtime weather information of searched locations with changing
-          background gradients.
+          An app in which you can get realtime weather information of searched
+          locations with changing background gradients. Built with Express.
         </Card>
         <Card
           img="/grocery-list.png"
@@ -78,7 +82,8 @@ function Projects() {
           title="Grocery List App"
           githubLink="https://github.com/omergencoglu/grocery-list-react"
         >
-          Add, delete grocery items to the list.
+          A Grocery List app where you can add and delete grocery items to the
+          grocery list. I used React for this project.
         </Card>
         <Card
           img="/expense-tracker.png"
@@ -86,8 +91,8 @@ function Projects() {
           title="Expense Tracker"
           githubLink="https://github.com/omergencoglu/expense-tracker"
         >
-          Log your expenses with expense tracker. You can see your monthly
-          expenses on graphs.
+          An Expense Tracker app in which you can log your expenses. You can see
+          and filter your expenses by year. React was used for this project
         </Card>
         <Card
           img="/meetups.png"
@@ -96,8 +101,8 @@ function Projects() {
           previewLink="https://nextjs-meetups-app-seven.vercel.app/"
           githubLink="https://github.com/omergencoglu/nextjs-meetups-app"
         >
-          You can add meetups and show the details on a meetup&apos;s individual
-          detail page.
+          A Meetups app where you can add meetups. You can see the details of
+          meetups on their individual pages. Next.js and MongoDB were used.
         </Card>
       </div>
     </section>
