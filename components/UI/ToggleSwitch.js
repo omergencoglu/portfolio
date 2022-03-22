@@ -9,14 +9,15 @@ import styles from "./ToggleSwitch.module.css";
 function ToggleSwitch() {
   const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();
-
-  useEffect(() => setMounted(true), []);
-
-  if (!mounted) return null;
+  const { resolvedTheme } = useTheme();
 
   const themeChanger = () => {
     setTheme(theme === "light" ? "dark" : "light");
   };
+
+  useEffect(() => setMounted(true), []);
+
+  if (!mounted) return null;
 
   return (
     <Fragment>
@@ -25,7 +26,7 @@ function ToggleSwitch() {
           id="themeChanger"
           type="checkbox"
           onChange={themeChanger}
-          checked={theme === "dark" ? "checked" : ""}
+          checked={resolvedTheme === "dark" ? "checked" : ""}
         />
         <span className={`${styles.slider} ${styles.round}`}>
           <MoonIcon />
