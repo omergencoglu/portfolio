@@ -14,7 +14,7 @@
   font-size: 0.9rem;
   line-height: 1.7rem;
   margin-bottom: 2rem;
-  min-height: 5rem;
+  min-height: 5.1rem;
   flex: 1;
 }
 
@@ -69,7 +69,8 @@
     width: 38vw;
   }
   .cardMain {
-    min-height: 7rem;
+    min-height: 10.2rem;
+    margin-bottom: 1rem;
   }
 }
 
@@ -93,5 +94,17 @@
 @media (min-width: 1280px) {
   .card {
     width: 25vw;
+  }
+}
+
+@media (min-width: 1600px) {
+  .cardMain {
+    min-height: 9rem;
+  }
+}
+
+@media (min-width: 1900px) {
+  .cardMain {
+    min-height: 7rem;
   }
 }

@@ -8,6 +8,26 @@ function Projects() {
       <h2 id="projects">PROJECTS</h2>
       <div className={styles.cardsWrapper}>
         <Card
+          img="/portfolio.png"
+          keywords="React Next.js"
+          title="Portfolio Project"
+          previewLink="https://omergencoglu.dev"
+          githubLink="https://github.com/omergencoglu/portfolio"
+        >
+          This is my portfolio website. You can find more information about me,
+          my projects and more. React and Next.js were used.
+        </Card>
+        <Card
+          img="/weather-app.png"
+          keywords="Express Node.js"
+          title="Weatherlify"
+          previewLink="https://weatherlify.herokuapp.com/"
+          githubLink="https://github.com/omergencoglu/weather-app"
+        >
+          An app in which you can get realtime weather information of searched
+          locations with changing background gradients. Built with Express.
+        </Card>
+        <Card
           img="/quotes.png"
           keywords="React Firebase"
           title="Quotes"
@@ -55,26 +75,6 @@ function Projects() {
         >
           An app which has create, read, update and delete (CRUD) functionality.
           I used Express and MongoDB for this project.
-        </Card>
-        <Card
-          img="/portfolio.png"
-          keywords="React Next.js"
-          title="Portfolio Project"
-          previewLink="https://omergencoglu.dev"
-          githubLink="https://github.com/omergencoglu/portfolio"
-        >
-          This is my portfolio website. You can find more information about me,
-          my projects and more. React and Next.js were used.
-        </Card>
-        <Card
-          img="/weather-app.png"
-          keywords="Express Node.js"
-          title="Weatherlify"
-          previewLink="https://weatherlify.herokuapp.com/"
-          githubLink="https://github.com/omergencoglu/weather-app"
-        >
-          An app in which you can get realtime weather information of searched
-          locations with changing background gradients. Built with Express.
         </Card>
         <Card
           img="/grocery-list.png"

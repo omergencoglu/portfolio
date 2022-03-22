@@ -14,7 +14,7 @@
   flex-direction: column;
   align-items: center;
 
-  width: 2em;
+  width: 1.8em;
   margin: 1.5rem;
   transition: all 0.3s;
 }
@@ -31,6 +31,10 @@
 
   .iconsWrapper {
     flex-direction: column;
+  }
+
+  .iconsWrapper > * {
+    width: 2em;
   }
 
   .iconsWrapper::after {
