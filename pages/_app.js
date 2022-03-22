@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { ThemeProvider } from "next-themes";
 import AOS from "aos";
 
-import Layout from "../components/layout/Layout";
+import Layout from "../components/Layout/Layout";
 
 import "../styles/globals.css";
 import "aos/dist/aos.css";
