@@ -10,13 +10,11 @@ function Layout({ children }) {
   return (
     <Fragment>
       <Head>
-        <title>Omer Gencoglu Portfolio</title>
+        <title>Omer Gencoglu</title>
         <meta
           name="description"
           content="You can find more information about me, my projects and more..."
         />
-        `<meta name="theme-color" content="var(--color-background)" />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
       <main className={styles.main}>{children}</main>
