@@ -45,7 +45,7 @@
   box-shadow: var(--color-navbar-menu-shadow);
 }
 
-.logo {
+.logo a {
   font-size: 2rem;
   letter-spacing: 0.2rem;
   color: var(--color-primary);
@@ -83,7 +83,7 @@
     display: none;
   }
 
-  .logo {
+  .logo a {
     font-size: 2.2rem;
   }
 
@@ -107,7 +107,7 @@
     padding: 0 3rem;
   }
 
-  .logo {
+  .logo a {
     font-size: 2.5rem;
   }
 }

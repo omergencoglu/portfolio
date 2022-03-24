@@ -2,6 +2,10 @@
   My Portfolio Website<br/>
   <a href="https://github.com/omergencoglu" target="_blank">Omer Gencoglu</a>
 </h2>
+<div align="center">
+  <img alt="Demo" src="/demo.png" />
+</div>
+<br/>
 
 ## TL;DR
 

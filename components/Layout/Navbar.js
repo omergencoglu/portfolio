@@ -23,7 +23,10 @@ function Navbar() {
   return (
     <header className={`${styles.header} ${itemsVisible && styles.menuOpen}`}>
       <nav className={`${styles.navbar} ${itemsVisible && styles.menuOpen}`}>
-        <h1 className={styles.logo}>OMER</h1>
+        <h1 className={styles.logo}>
+          <Link href="/">OMER</Link>
+        </h1>
+
         <ul>
           <li className={styles.navLinks}>
             <Link href="#projects">Projects</Link>
