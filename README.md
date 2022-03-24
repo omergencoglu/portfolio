@@ -3,7 +3,7 @@
   <a href="https://github.com/omergencoglu" target="_blank">Omer Gencoglu</a>
 </h2>
 <div align="center">
-  <img alt="Demo" src="/demo.png" />
+  <img alt="Demo" src="/public/demo.png" />
 </div>
 <br/>
 
