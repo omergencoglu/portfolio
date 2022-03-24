@@ -8,8 +8,8 @@
 <br/>
 
 <div align="center">
-![shieldsio](https://img.shields.io/badge/BUILT%20WITH-JAVASCRIPT-blue?style=for-the-badge&logo=appveyor) &nbsp;
-![shieldsio](https://img.shields.io/badge/OPEN-SOURCE-blueviolet?style=for-the-badge&logo=appveyor) &nbsp;
+<img alt="shieldsio" src="https://img.shields.io/badge/BUILT%20WITH-JAVASCRIPT-blue?style=for-the-badge&logo=appveyor" />&nbsp;
+<img alt="shieldsio" src="https://img.shields.io/badge/OPEN-SOURCE-blueviolet?style=for-the-badge&logo=appveyor" />
 </div>
 
 ## TL;DR
