@@ -13,7 +13,9 @@ function ResumePage() {
           content="View and download my personal resume."
         />
       </Head>
-      <Resume />
+      <main>
+        <Resume />
+      </main>
     </Fragment>
   );
 }

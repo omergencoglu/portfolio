@@ -1,23 +1,19 @@
 .main {
   display: grid;
   grid-template-areas:
-    "header"
     "name"
     "toolkit"
     "projects"
     "contact"
-    "social"
-    "footer";
+    "social";
 }
 
 @media (min-width: 900px) {
   .main {
     grid-template-columns: 11fr 1fr;
     grid-template-areas:
-      "header    header"
       "name      name"
       "projects  toolkit"
-      "contact   contact"
-      "footer    footer";
+      "contact   contact";
   }
 }
