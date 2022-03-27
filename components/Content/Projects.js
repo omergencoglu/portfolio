@@ -24,7 +24,7 @@ function Projects() {
           previewLink="https://weatherlify.herokuapp.com/"
           githubLink="https://github.com/omergencoglu/weather-app"
         >
-          An app in which you can get realtime weather information of searched
+          An app in which you can get real-time weather information of searched
           locations with changing background gradients. Built with Express.
         </Card>
         <Card
