@@ -16,7 +16,7 @@ function Social() {
           <Github />
         </a>
         <a
-          href="https://www.linkedin.com/in/omer-sait-gencoglu/"
+          href="https://www.linkedin.com/in/omergencoglu"
           target="_blank"
           rel="noopener noreferrer"
         >

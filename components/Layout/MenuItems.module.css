@@ -8,11 +8,11 @@
   align-items: center;
   flex-direction: column;
   height: auto;
-  padding: 2rem;
+  padding: 1rem;
   box-shadow: inset 0px -11px 15px -10px var(--color-shadow);
   transition: all 400ms ease-in-out;
 }
 
 .links li {
-  margin: 1rem;
+  margin: 0.7rem;
 }

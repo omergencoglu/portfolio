@@ -29,10 +29,13 @@ function Navbar() {
 
         <ul>
           <li className={styles.navLinks}>
-            <Link href="#projects">Projects</Link>
+            <Link href="/#projects">Projects</Link>
           </li>
           <li className={styles.navLinks}>
-            <Link href="#contact">Contact</Link>
+            <Link href="/#contact">Contact</Link>
+          </li>
+          <li className={styles.navLinks}>
+            <Link href="/resume">Resume</Link>
           </li>
           <li>
             <ToggleSwitch />
