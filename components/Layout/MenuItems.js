@@ -14,10 +14,13 @@ function MenuItems(props) {
     >
       <ul className={styles.links}>
         <li>
-          <Link href="#projects">Projects</Link>
+          <Link href="/#projects">Projects</Link>
         </li>
         <li>
-          <Link href="#contact">Contact</Link>
+          <Link href="/#contact">Contact</Link>
+        </li>
+        <li>
+          <Link href="/resume">Resume</Link>
         </li>
       </ul>
     </CSSTransition>

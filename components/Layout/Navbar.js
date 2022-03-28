@@ -34,6 +34,9 @@ function Navbar() {
           <li className={styles.navLinks}>
             <Link href="/#contact">Contact</Link>
           </li>
+          <li className={styles.navLinks}>
+            <Link href="/resume">Resume</Link>
+          </li>
           <li>
             <ToggleSwitch />
           </li>
