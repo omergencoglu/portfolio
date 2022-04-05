@@ -1,4 +1,6 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import Image from "next/image";
+import { useTheme } from "next-themes";
 import useInput from "../../hooks/use-input";
 
 import SubmitButton from "../UI/SubmitButton";
@@ -6,7 +8,9 @@ import SubmitButton from "../UI/SubmitButton";
 import styles from "./Contact.module.css";
 
 function Contact() {
+  const { resolvedTheme } = useTheme();
   const [buttonState, setButtonState] = useState(null);
+  const [mounted, setMounted] = useState(false);
 
   const regex =
     /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
@@ -93,8 +97,29 @@ function Contact() {
     ? `${styles.formControl} ${styles.invalid}`
     : `${styles.formControl}`;
 
+  useEffect(() => setMounted(true), []);
+
+  if (!mounted) return null;
+
   return (
     <section className={styles.contact} data-aos="fade-up">
+      {resolvedTheme === "dark" ? (
+        <Image
+          alt="Dark theme background image"
+          src="/contact-dark.png"
+          layout="fill"
+          objectFit="cover"
+          quality={100}
+        />
+      ) : (
+        <Image
+          alt="Light theme background image"
+          src="/contact-light.png"
+          layout="fill"
+          objectFit="cover"
+          quality={100}
+        />
+      )}
       <h2 id="contact">Contact</h2>
       <form onSubmit={formSubmissionHandler}>
         <div className={styles.controlGroup}>

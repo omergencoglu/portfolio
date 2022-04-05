@@ -7,12 +7,12 @@
   min-height: 38rem;
   height: 80vh;
   flex-direction: column;
-  background-image: var(--contact-background);
-  background-position: 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
   -webkit-clip-path: polygon(0 5%, 100% 0, 100% 94%, 0 100%);
   clip-path: polygon(0 5%, 100% 0, 100% 94%, 0 100%);
+}
+
+.contact > span {
+  z-index: -1;
 }
 
 .contact > h2 {
