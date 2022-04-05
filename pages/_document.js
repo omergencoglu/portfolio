@@ -67,7 +67,7 @@ export default function Document() {
           href="/icons/safari-pinned-tab.svg"
           color="#5bbad5"
         />
-        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="shortcut icon" href="/icons/favicon.ico" />
         <link
           rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Roboto&family=Source+Code+Pro&display=optional"
