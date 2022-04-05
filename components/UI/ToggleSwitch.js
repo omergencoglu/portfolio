@@ -32,6 +32,7 @@ function ToggleSwitch() {
           <MoonIcon />
           <SunIcon />
         </span>
+        <span className={styles.label}>Theme toggler</span>
       </label>
     </Fragment>
   );
