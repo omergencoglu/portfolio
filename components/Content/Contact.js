@@ -4,6 +4,8 @@ import { useTheme } from "next-themes";
 import useInput from "../../hooks/use-input";
 
 import SubmitButton from "../UI/SubmitButton";
+import darkBg from "../../public/contact-dark.png";
+import lightBg from "../../public/contact-light.png";
 
 import styles from "./Contact.module.css";
 
@@ -106,7 +108,8 @@ function Contact() {
       {resolvedTheme === "dark" ? (
         <Image
           alt="Dark theme background image"
-          src="/contact-dark.png"
+          src={darkBg}
+          placeholder="blur"
           layout="fill"
           objectFit="cover"
           quality={100}
@@ -114,7 +117,8 @@ function Contact() {
       ) : (
         <Image
           alt="Light theme background image"
-          src="/contact-light.png"
+          src={lightBg}
+          placeholder="blur"
           layout="fill"
           objectFit="cover"
           quality={100}

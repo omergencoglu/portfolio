@@ -1,5 +1,16 @@
 import Card from "../UI/Card";
 
+import portfolioImg from "../../public/images/portfolio.png";
+import weatherAppImg from "../../public/images/weather-app.png";
+import quotesImg from "../../public/images/quotes.png";
+import yelpCampImg from "../../public/images/yelpcamp.png";
+import googleDarkImg from "../../public/images/google-dark.png";
+import foodOrderImg from "../../public/images/food-order.png";
+import userManagementImg from "../../public/images/user-management.png";
+import groceryListImg from "../../public/images/grocery-list.png";
+import expenseTrackerImg from "../../public/images/expense-tracker.png";
+import meetupsImg from "../../public/images/meetups.png";
+
 import styles from "./Projects.module.css";
 
 function Projects() {
@@ -8,7 +19,7 @@ function Projects() {
       <h2 id="projects">PROJECTS</h2>
       <div className={styles.cardsWrapper}>
         <Card
-          img="/portfolio.png"
+          img={portfolioImg}
           keywords="React Next.js"
           title="Portfolio Project"
           previewLink="https://omergencoglu.dev"
@@ -18,7 +29,7 @@ function Projects() {
           my projects and more. React and Next.js were used.
         </Card>
         <Card
-          img="/weather-app.png"
+          img={weatherAppImg}
           keywords="Express Node.js"
           title="Weatherlify"
           previewLink="https://weatherlify.herokuapp.com/"
@@ -28,7 +39,7 @@ function Projects() {
           locations with changing background gradients. Built with Express.
         </Card>
         <Card
-          img="/quotes.png"
+          img={quotesImg}
           keywords="React Firebase"
           title="Quotes"
           previewLink="https://quotes-113c7.web.app/quotes"
@@ -39,7 +50,7 @@ function Projects() {
           this project.
         </Card>
         <Card
-          img="/yelpcamp.png"
+          img={yelpCampImg}
           keywords="Node.js Express MongoDB"
           title="YelpCamp"
           previewLink="https://omersyelpcamp.herokuapp.com/"
@@ -49,7 +60,7 @@ function Projects() {
           on campgrounds worldwide. I used Express and MongoDB for this project.
         </Card>
         <Card
-          img="/google-dark.png"
+          img={googleDarkImg}
           keywords="HTML CSS"
           title="Google Homepage"
           previewLink="https://omergencoglu.github.io/Google-Homepage-Clone-Darkmode/"
@@ -58,7 +69,7 @@ function Projects() {
           Google homepage dark mode clone - to practice HTML/CSS.
         </Card>
         <Card
-          img="/food-order.png"
+          img={foodOrderImg}
           keywords="React Firebase"
           title="Food Ordering App"
           githubLink="https://github.com/omergencoglu/food-order-app-react"
@@ -68,7 +79,7 @@ function Projects() {
           project.
         </Card>
         <Card
-          img="/user-management.png"
+          img={userManagementImg}
           keywords="Node.js Express MongoDB"
           title="User Management"
           githubLink="https://github.com/omergencoglu/user-management-system-crud"
@@ -77,7 +88,7 @@ function Projects() {
           I used Express and MongoDB for this project.
         </Card>
         <Card
-          img="/grocery-list.png"
+          img={groceryListImg}
           keywords="React"
           title="Grocery List App"
           githubLink="https://github.com/omergencoglu/grocery-list-react"
@@ -86,7 +97,7 @@ function Projects() {
           grocery list. I used React for this project.
         </Card>
         <Card
-          img="/expense-tracker.png"
+          img={expenseTrackerImg}
           keywords="React"
           title="Expense Tracker"
           githubLink="https://github.com/omergencoglu/expense-tracker"
@@ -95,7 +106,7 @@ function Projects() {
           and filter your expenses by year. React was used for this project.
         </Card>
         <Card
-          img="/meetups.png"
+          img={meetupsImg}
           keywords="React Next.js MongoDB"
           title="Meetups App"
           previewLink="https://nextjs-meetups-app-seven.vercel.app/"

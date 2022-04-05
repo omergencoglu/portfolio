@@ -1,5 +1,7 @@
 import Image from "next/image";
 
+import logo from "../../public/logo.png";
+
 import styles from "./NameArea.module.css";
 
 function NameArea() {
@@ -7,8 +9,9 @@ function NameArea() {
     <section className={styles.nameArea} data-aos="zoom-in">
       <div className={styles.imageDiv}>
         <Image
-          src="/logo.png"
+          src={logo}
           alt="Omer Gencoglu"
+          placeholder="blur"
           width={100}
           height={100}
           layout="responsive"
