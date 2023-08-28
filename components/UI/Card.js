@@ -9,7 +9,7 @@ const Card = (props) => {
   return (
     <div className={styles.card} data-aos="fade-up">
       <a
-        href={props.githubLink}
+        href={props.githubLink ? props.githubLink : props.previewLink}
         target="_blank"
         rel="noopener noreferrer"
         className={styles.cardHeader}
@@ -28,9 +28,15 @@ const Card = (props) => {
       <div className={styles.cardFooter}>
         <span>{props.keywords}</span>
         <div className={styles.links}>
-          <a href={props.githubLink} target="_blank" rel="noopener noreferrer">
-            <Github />
-          </a>
+          {props.githubLink && (
+            <a
+              href={props.githubLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Github />
+            </a>
+          )}
           {props.previewLink && (
             <a
               href={props.previewLink}
