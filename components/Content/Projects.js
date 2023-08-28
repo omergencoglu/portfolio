@@ -32,7 +32,7 @@ function Projects() {
           img={weatherAppImg}
           keywords="Express Node.js"
           title="Weatherlify"
-          previewLink="https://weatherlify.herokuapp.com/"
+          previewLink="https://weatherlify.onrender.com/"
           githubLink="https://github.com/omergencoglu/weather-app"
         >
           An app in which you can get real-time weather information of searched
@@ -46,7 +46,7 @@ function Projects() {
           githubLink="https://github.com/omergencoglu/quotes-react-router"
         >
           A Quotes app that you can add new quotes and comment to the existing
-          ones. Quotes can be viewed invidually. I used React and Firebase for
+          ones. Quotes can be viewed individually. I used React and Firebase for
           this project.
         </Card>
         <Card
