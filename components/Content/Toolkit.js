@@ -7,7 +7,9 @@ import Git from "../UI/Icons/Toolkit/Git";
 import MongoDB from "../UI/Icons/Toolkit/MongoDB";
 import Nextjs from "../UI/Icons/Toolkit/Nextjs";
 import Node from "../UI/Icons/Toolkit/Node";
-import VSCode from "../UI/Icons/Toolkit/VSCode";
+import TypeScript from "../UI/Icons/Toolkit/TypeScript";
+import Sass from "../UI/Icons/Toolkit/Sass";
+import TailwindCSS from "../UI/Icons/Toolkit/TailwindCSS";
 
 import styles from "./Toolkit.module.css";
 
@@ -19,13 +21,15 @@ function Toolkit() {
         <Html5 />
         <Css3 />
         <JavaScript />
+        <TypeScript />
         <Reactjs />
         <Nextjs />
         <Node />
         <Expressjs />
         <MongoDB />
+        <Sass />
+        <TailwindCSS />
         <Git />
-        <VSCode />
       </div>
     </section>
   );

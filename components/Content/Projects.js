@@ -22,7 +22,7 @@ function Projects() {
       <div className={styles.cardsWrapper}>
         <Card
           img={tspautoImg}
-          keywords="React Next.js Tailwind CSS Framer Motion"
+          keywords="React Next.js Tailwind CSS"
           title="TSP Auto"
           previewLink="https://staging-tspauto.vercel.app/"
         >
