@@ -12,9 +12,6 @@ function NameArea() {
           src={logo}
           alt="Omer Gencoglu"
           placeholder="blur"
-          width={100}
-          height={100}
-          layout="responsive"
           priority={true}
         />
       </div>

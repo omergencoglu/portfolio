@@ -10,13 +10,16 @@
 }
 
 .imageDiv {
+  position: relative;
   width: 70%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.imageDiv > span {
+.imageDiv > img {
   border-radius: 100%;
+  width: 100%;
+  height: auto;
 }
 
 .text {
@@ -66,14 +69,6 @@
     padding: 5%;
     height: 100%;
     width: 60%;
-  }
-  .imageDiv > span {
-    height: 100%;
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
   }
 
   .text {
