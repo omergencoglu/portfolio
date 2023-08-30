@@ -12,16 +12,16 @@
     "@sendgrid/mail": "^7.7.0",
     "aos": "^2.3.4",
     "i": "^0.3.7",
-    "next": "12.1.0",
-    "next-themes": "^0.1.1",
-    "npm": "^8.19.4",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
+    "next": "13.4.19",
+    "next-themes": "^0.2.1",
+    "npm": "^9.8.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
     "react-responsive": "^9.0.2",
     "react-transition-group": "^4.4.5"
   },
   "devDependencies": {
-    "eslint": "8.10.0",
-    "eslint-config-next": "12.1.0"
+    "eslint": "8.48.0",
+    "eslint-config-next": "13.4.19"
   }
 }

@@ -110,8 +110,6 @@ function Contact() {
           alt="Dark theme background image"
           src={darkBg}
           placeholder="blur"
-          layout="fill"
-          objectFit="cover"
           quality={100}
         />
       ) : (
@@ -119,11 +117,10 @@ function Contact() {
           alt="Light theme background image"
           src={lightBg}
           placeholder="blur"
-          layout="fill"
-          objectFit="cover"
           quality={100}
         />
       )}
+
       <h2 id="contact">Contact</h2>
       <form onSubmit={formSubmissionHandler}>
         <div className={styles.controlGroup}>

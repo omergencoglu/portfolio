@@ -11,6 +11,9 @@
 
 .imageDiv {
   width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .imageDiv > span {
   border-radius: 100%;
