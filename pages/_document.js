@@ -68,9 +68,15 @@ export default function Document() {
           color="#5bbad5"
         />
         <link rel="shortcut icon" href="/icons/favicon.ico" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="true"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap"
           rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Roboto&family=Source+Code+Pro&display=optional"
         />
 
         <meta
