@@ -25,19 +25,24 @@
   justify-content: space-between;
 }
 
-.cardHeader h3 {
+.cardImage {
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+}
+
+.cardImageLink {
+  transition: all 0.3s;
+}
+
+.cardImageLink:hover {
+  transform: scale(1.08);
+}
+
+.cardTitle {
   font-size: 1.4rem;
   text-align: center;
   margin: 1.5rem 0 0.5rem 0;
-}
-
-.cardHeader > span {
-  transition: all 0.3s;
-  border-radius: 10px;
-}
-
-.cardHeader > span:hover {
-  transform: scale(1.08);
 }
 
 .cardFooter > span {

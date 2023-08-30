@@ -12,17 +12,21 @@ const Card = (props) => {
         href={props.githubLink ? props.githubLink : props.previewLink}
         target="_blank"
         rel="noopener noreferrer"
-        className={styles.cardHeader}
+        className={styles.cardImageLink}
       >
         <Image
           src={props.img}
           alt={props.title}
           placeholder="blur"
-          width={1080}
-          height={608}
-          layout="responsive"
+          className={styles.cardImage}
         />
-        <h3>{props.title}</h3>
+      </a>
+      <a
+        href={props.githubLink ? props.githubLink : props.previewLink}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <h3 className={styles.cardTitle}>{props.title}</h3>
       </a>
       <p className={styles.cardMain}>{props.children}</p>
       <div className={styles.cardFooter}>
