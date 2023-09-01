@@ -16,7 +16,6 @@ async function handler(req, res) {
     method: "POST",
     body: formData,
   });
-  console.log(result);
 
   if (result.ok) {
     res.status(201).json({ message: "Email sent successfully!" });
