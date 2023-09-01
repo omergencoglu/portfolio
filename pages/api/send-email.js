@@ -17,7 +17,7 @@ async function handler(req, res) {
     fetch("https://api.web3forms.com/submit", {
       method: "POST",
       body: formData,
-    }).then((res) => res.json());
+    });
     res.status(201).json({ message: "Email sent successfully!" });
   } catch (error) {
     res.status(500).json({ message: "Sending email failed!" });
