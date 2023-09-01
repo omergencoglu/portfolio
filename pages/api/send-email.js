@@ -1,26 +1,24 @@
-const mail = require("@sendgrid/mail");
-mail.setApiKey(process.env.SENDGRID_API_KEY);
-
 async function handler(req, res) {
   const body = JSON.parse(req.body);
 
-  const message = `
-      Name: ${body.enteredName}\r\n
-      Email: ${body.enteredEmail}\r\n
-      Message: ${body.enteredMessage}
-    `;
+  const message = `Name: ${body.enteredName}\r\nMessage: ${body.enteredMessage}`;
 
-  const data = {
-    to: "omersaitgencoglu@gmail.com",
-    from: process.env.MAIL_SENDER,
-    subject: `New message from ${body.enteredName}`,
-    text: message,
-    html: message.replace(/\r\n/g, "<br />"),
-  };
+  const formData = new FormData();
+  formData.append("access_key", process.env.WEBFORMS_API_KEY);
+  formData.append("email", body.enteredEmail);
+  formData.append("from_name", body.enteredName);
+  formData.append(
+    "subject",
+    `New message from ${body.enteredName} - omergencoglu.dev`
+  );
+  formData.append("details", message);
 
   try {
-    await mail.send(data);
-    res.status(201).json({ message: "Sent email successfully" });
+    fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData,
+    }).then((res) => res.json());
+    res.status(201).json({ message: "Email sent successfully!" });
   } catch (error) {
     res.status(500).json({ message: "Sending email failed!" });
     return;
