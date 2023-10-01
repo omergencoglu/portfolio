@@ -24,7 +24,7 @@ function Projects() {
           img={tspautoImg}
           keywords="React Next.js Tailwind CSS"
           title="TSP Auto"
-          previewLink="https://staging-tspauto.vercel.app/"
+          previewLink="https://tspauto.ca/"
         >
           This is a landing page built with React. Includes sections having
           different features. React, Next.js, Tailwind CSS were used.
