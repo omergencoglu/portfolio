@@ -52,6 +52,7 @@
   background-size: 14px 14px;
   background-repeat: repeat-x;
   background-position: bottom;
+  text-wrap: nowrap;
 }
 
 .paragraph {

@@ -62,7 +62,7 @@
 }
 
 .links > a > svg:hover {
-  transform: scale(1.3);
+  transform: scale(1.1);
 }
 
 @media (min-width: 650px) {
